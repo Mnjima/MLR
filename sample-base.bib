@@ -1,0 +1,2089 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     author          = "Gerry Murray",
+%%%     version         = "1.2",
+%%%     date            = "2 April 2012",
+%%%     filename        = "acmsmall-sample-bibfile.bib",
+%%%     address         = "ACM, NY",
+%%%     email           = "murray at hq.acm.org",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+%%%     supported       = "yes",
+%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+%%%                        that 'match' the examples provided in the Specifications Document
+%%%                        AND, also, 'legacy'-type bibs. It should assist authors in
+%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+%%%                        so as to obtain the appropriate ACM Reference Format output.
+%%%                        It also contains many 'Standard Abbreviations'. "
+%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+%Entries
+
+@inproceedings{Garousi2016/2915970.2916008,
+author = {Garousi, Vahid and Felderer, Michael and M\"{a}ntyl\"{a}, Mika V.},
+title = {The Need for Multivocal Literature Reviews in Software Engineering: Complementing Systematic Literature Reviews with Grey Literature},
+year = {2016},
+isbn = {9781450336918},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2915970.2916008},
+doi = {10.1145/2915970.2916008},
+abstract = {Systematic Literature Reviews (SLR) may not provide insight into the "state of the practice" in SE, as they do not typically include the "grey" (non-published) literature. A Multivocal Literature Review (MLR) is a form of a SLR which includes grey literature in addition to the published (formal) literature. Only a few MLRs have been published in SE so far. We aim at raising the awareness for MLRs in SE by addressing two research questions (RQs): (1) What types of knowledge are missed when a SLR does not include the multivocal literature in a SE field? and (2) What do we, as a community, gain when we include the multivocal literature and conduct MLRs? To answer these RQs, we sample a few example SLRs and MLRs and identify the missing and the gained knowledge due to excluding or including the grey literature. We find that (1) grey literature can give substantial benefits in certain areas of SE, and that (2) the inclusion of grey literature brings forward certain challenges as evidence in them is often experience and opinion based. Given these conflicting viewpoints, the authors are planning to prepare systematic guidelines for performing MLRs in SE.},
+booktitle = {Proceedings of the 20th International Conference on Evaluation and Assessment in Software Engineering},
+articleno = {26},
+numpages = {6},
+keywords = {grey literature, research methodology, multivocal literature reviews, SLR, empirical software engineering, MLR, systematic literature reviews},
+location = {Limerick, Ireland},
+series = {EASE '16}
+}
+
+@article{Ogawa91,
+ ISSN = {00346543, 19351046},
+ URL = {http://www.jstor.org/stable/1170630},
+ abstract = {This article aims to stimulate discussion about the issue of rigor in conducting reviews of multivocal literatures. Multivocal literatures, which abound in the field of education, are comprised of all accessible writings on a common, often contemporary topic. The exploratory case study method is proposed as a means to engender rigor in reviews of such literatures. It is argued that it is appropriate to apply the concept of rigor to reviews of multivocal literatures and to use the exploratory case study method as a tool for thinking about procedures that could enhance rigor in such reviews. The article draws upon the authors' experiences in conducting a review of the literature on school-based management to illustrate how the proposed procedures might be employed.},
+ author = {Rodney T. Ogawa and Betty Malen},
+ journal = {Review of Educational Research},
+ number = {3},
+ pages = {265--286},
+ publisher = {[Sage Publications, Inc., American Educational Research Association]},
+ title = {Towards Rigor in Reviews of Multivocal Literatures: Applying the Exploratory Case Study Method},
+ urldate = {2023-11-23},
+ volume = {61},
+ year = {1991}
+}
+
+  @article{KITCHENHAM20132049,
+title = {A systematic review of systematic review process research in software engineering},
+journal = {Information and Software Technology},
+volume = {55},
+number = {12},
+pages = {2049-2075},
+year = {2013},
+issn = {0950-5849},
+doi = {https://doi.org/10.1016/j.infsof.2013.07.010},
+url = {https://www.sciencedirect.com/science/article/pii/S0950584913001560},
+author = {Barbara Kitchenham and Pearl Brereton},
+keywords = {Systematic review, Systematic literature review, Systematic review methodology, Mapping study},
+abstract = {Context
+Many researchers adopting systematic reviews (SRs) have also published papers discussing problems with the SR methodology and suggestions for improving it. Since guidelines for SRs in software engineering (SE) were last updated in 2007, we believe it is time to investigate whether the guidelines need to be amended in the light of recent research.
+Objective
+To identify, evaluate and synthesize research published by software engineering researchers concerning their experiences of performing SRs and their proposals for improving the SR process.
+Method
+We undertook a systematic review of papers reporting experiences of undertaking SRs and/or discussing techniques that could be used to improve the SR process. Studies were classified with respect to the stage in the SR process they addressed, whether they related to education or problems faced by novices and whether they proposed the use of textual analysis tools.
+Results
+We identified 68 papers reporting 63 unique studies published in SE conferences and journals between 2005 and mid-2012. The most common criticisms of SRs were that they take a long time, that SE digital libraries are not appropriate for broad literature searches and that assessing the quality of empirical studies of different types is difficult.
+Conclusion
+We recommend removing advice to use structured questions to construct search strings and including advice to use a quasi-gold standard based on a limited manual search to assist the construction of search stings and evaluation of the search process. Textual analysis tools are likely to be useful for inclusion/exclusion decisions and search string construction but require more stringent evaluation. SE researchers would benefit from tools to manage the SR process but existing tools need independent validation. Quality assessment of studies using a variety of empirical methods remains a major problem.}
+}
+
+
+
+%Entries
+@inproceedings{Gralha2018,
+author = {Gralha, Catarina and Damian, Daniela and I. (Tony) Wasserman, Anthony and Goulão, Miguel and Araújo, João},
+year = {2018},
+month = {05},
+pages = {823-833},
+title = {The evolution of requirements practices in software startups},
+doi = {10.1145/3180155.3180158}
+}
+@misc{kitchenham2007guidelines,
+  title={Guidelines for performing systematic literature reviews in software engineering},
+  author={Kitchenham, Barbara and Charters, Stuart and others},
+  year={2007},
+  publisher={UK}
+}
+
+ @inproceedings{wohlin2014guidelines,
+  title={Guidelines for snowballing in systematic literature studies and a replication in software engineering},
+  author={Wohlin, Claes},
+  booktitle={Proceedings of the 18th international conference on evaluation and assessment in software engineering},
+  pages={1--10},
+  year={2014}
+}
+@article{McGregor2008AgileSP,
+  title={Agile Software Product Lines, Deconstructed},
+  author={John McGregor},
+  journal={Journal of Object Technology},
+  year={2008},
+  volume={7},
+  pages={7-19}
+}
+
+@InProceedings{Bockle2002,
+author="B{\"o}ckle, G{\"u}nter
+and Mu{\~{n}}oz, Jes{\'u}s Bermejo
+and Knauber, Peter
+and Krueger, Charles W.
+and do Prado Leite, Julio Cesar Sampaio
+and van der Linden, Frank
+and Northrop, Linda
+and Stark, Michael
+and Weiss, David M.",
+editor="Chastek, Gary J.",
+title="Adopting and Institutionalizing a Product Line Culture",
+booktitle="Software Product Lines",
+year="2002",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="49--59",
+abstract="The strengths of product line engineering have been described before. But how can an organization make the move from developing one-of products to product line engineering without major interruptions in the day-today work? This paper describes how to perform the transition to product line engineering and lists the various strategies for such a transition. It also describes how to create an adoption plan and how to institutionalize product line engineering in an organization.",
+isbn="978-3-540-45652-0"
+}
+
+@inproceedings{Klotins2018/3183519.3183539,
+author = {Klotins, Eriks and Unterkalmsteiner, Michael and Chatzipetrou, Panagiota and Gorschek, Tony and Prikladnicki, Rafael and Tripathi, Nirnaya and Pompermaier, Leandro Bento},
+title = {Exploration of Technical Debt in Start-Ups},
+year = {2018},
+isbn = {9781450356596},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3183519.3183539},
+doi = {10.1145/3183519.3183539},
+abstract = {Context: Software start-ups are young companies aiming to build and market software-intensive products fast with little resources. Aiming to accelerate time-to-market, start-ups often opt for ad-hoc engineering practices, make shortcuts in product engineering, and accumulate technical debt.Objective: In this paper we explore to what extent precedents, dimensions and outcomes associated with technical debt are prevalent in start-ups.Method: We apply a case survey method to identify aspects of technical debt and contextual information characterizing the engineering context in start-ups.Results: By analyzing responses from 86 start-up cases we found that start-ups accumulate most technical debt in the testing dimension, despite attempts to automate testing. Furthermore, we found that start-up team size and experience is a leading precedent for accumulating technical debt: larger teams face more challenges in keeping the debt under control.Conclusions: This study highlights the necessity to monitor levels of technical debt and to preemptively introduce practices to keep the debt under control. Adding more people to an already difficult to maintain product could amplify other precedents, such as resource shortages, communication issues and negatively affect decisions pertaining to the use of good engineering practices.},
+booktitle = {Proceedings of the 40th International Conference on Software Engineering: Software Engineering in Practice},
+pages = {75–84},
+numpages = {10},
+keywords = {software start-ups, technical debt},
+location = {Gothenburg, Sweden},
+series = {ICSE-SEIP '18}
+}
+
+@misc{FowlerBottlenecks,
+  title = {{MS Windows NT} Kernel Description},
+  howpublished = {\url{https://martinfowler.com/articles/bottlenecks-of-scaleups/01-tech-debt.html}},
+  note = {Accessed: 2010-09-30}
+}
+
+
+@INPROCEEDINGS{Besker2018, 
+author={T. {Besker} and A. {Martini} and R. {Edirisooriya Lokuge} and K. {Blincoe} and J. {Bosch}}, 
+booktitle={2018 IEEE International Conference on Software Maintenance and Evolution (ICSME)}, 
+title={Embracing Technical Debt, from a Startup Company Perspective}, 
+year={2018}, 
+volume={}, 
+number={}, 
+pages={415-425}, 
+keywords={organisational aspects;software development management;software maintenance;technical debt;software startups;startup company perspective;software teams;organizational factors;software knowledge;Software;Companies;Interviews;Conferences;Product development;Technical Debt;Startup;Software development}, 
+doi={10.1109/ICSME.2018.00051}, 
+ISSN={2576-3148}, 
+month={Sep.},}
+
+@INPROCEEDINGS{Maldonado7332619,
+  author={Maldonado, Everton da S. and Shihab, Emad},
+  booktitle={2015 IEEE 7th International Workshop on Managing Technical Debt (MTD)},
+  title={Detecting and quantifying different types of self-admitted technical Debt},
+  year={2015},
+  volume={},
+  number={},
+  pages={9-15},
+  doi={10.1109/MTD.2015.7332619}}
+
+@INPROCEEDINGS{Seaman6225999,
+  author={Seaman, Carolyn and Guo, Yuepu and Zazworka, Nico and Shull, Forrest and Izurieta, Clemente and Cai, Yuanfang and Vetrò, Antonio},
+  booktitle={2012 Third International Workshop on Managing Technical Debt (MTD)},
+  title={Using technical debt data in decision making: Potential decision approaches},
+  year={2012},
+  volume={},
+  number={},
+  pages={45-48},
+  doi={10.1109/MTD.2012.6225999}}
+
+
+
+
+@article{Weiss2006SoftwarePL,
+  title={Software Product Line Hall of Fame},
+  author={David M. Weiss and Paul C. Clements and Kyo Bin Kang and Charles W. Krueger},
+  journal={10th International Software Product Line Conference (SPLC'06)},
+  year={2006},
+  pages={237-237}
+}
+
+@InProceedings{Giardino2014fail,
+author="Giardino, Carmine
+and Wang, Xiaofeng
+and Abrahamsson, Pekka",
+editor="Lassenius, Casper
+and Smolander, Kari",
+title="Why Early-Stage Software Startups Fail: A Behavioral Framework",
+booktitle="Software Business. Towards Continuous Value Delivery",
+year="2014",
+publisher="Springer International Publishing",
+address="Cham",
+pages="27--41",
+abstract="Software startups are newly created companies with little operating history and oriented towards producing cutting-edge products. As their time and resources are extremely scarce, and one failed project can put them out of business, startups need effective practices to face with those unique challenges. However, only few scientific studies attempt to address characteristics of failure, especially during the early-stage. With this study we aim to raise our understanding of the failure of early-stage software startup companies. This state-of-practice investigation was performed using a literature review followed by a multiple-case study approach. The results present how inconsistency between managerial strategies and execution can lead to failure by means of a behavioral framework. Despite strategies reveal the first need to understand the problem/solution fit, actual executions prioritize the development of the product to launch on the market as quickly as possible to verify product/market fit, neglecting the necessary learning process.",
+isbn="978-3-319-08738-2"
+}
+
+@article{TRIPATHI2018130,
+title = "An anatomy of requirements engineering in software startups using multi-vocal literature and case survey",
+journal = "Journal of Systems and Software",
+volume = "146",
+pages = "130 - 151",
+year = "2018",
+issn = "0164-1212",
+doi = "https://doi.org/10.1016/j.jss.2018.08.059",
+url = "http://www.sciencedirect.com/science/article/pii/S0164121218301729",
+author = "Nirnaya Tripathi and Eriks Klotins and Rafael Prikladnicki and Markku Oivo and Leandro Bento Pompermaier and Arun Sojan Kudakacheril and Michael Unterkalmsteiner and Kari Liukkunen and Tony Gorschek",
+keywords = "Requirements engineering, Software startups, Multi-vocal literature review, Case survey",
+abstract = "Context: Software startups aim to develop innovative products, grow rapidly, and thus become important in the development of economy and jobs. Requirements engineering (RE) is a key process area in software development, but its effects on software startups are unclear. Objective: The main objective of this study was to explore how RE (elicitation, documentation, prioritization and validation) is used in software startups. Method: A multi-vocal literature review (MLR) was used to find scientific and gray literature. In addition, a case survey was employed to gather empirical data to reach this study’s objective. Results: In the MLR, 36 primary articles were selected out of 28,643 articles. In the case survey, 80 respondents provided information about software startup cases across the globe. Data analysis revealed that during RE processes, internal sources (e.g., for source), analyses of similar products (e.g., elicitation), uses of informal notes (e.g., for documentation), values to customers, products and stakeholders (e.g., for prioritization) and internal reviews/prototypes (e.g., for validation) were the most used techniques. Conclusion: After an analysis of primary literature, it was concluded that research on this topic is still in early stages and more systematic research is needed. Furthermore, few topics were suggested for future research."
+}
+
+@inproceedings{Klotins:2018:ETD,
+ author = {Klotins, Eriks and Unterkalmsteiner, Michael and Chatzipetrou, Panagiota and Gorschek, Tony and Prikladnicki, Rafael and Tripathi, Nirnaya and Pompermaier, Leandro Bento},
+ title = {Exploration of Technical Debt in Start-ups},
+ booktitle = {Proceedings of the 40th International Conference on Software Engineering: Software Engineering in Practice},
+ series = {ICSE-SEIP '18},
+ year = {2018},
+ isbn = {978-1-4503-5659-6},
+ location = {Gothenburg, Sweden},
+ pages = {75--84},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/3183519.3183539},
+ doi = {10.1145/3183519.3183539},
+ acmid = {3183539},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {software start-ups, technical debt},
+}
+
+@Article{Klotins882019,
+author="Klotins, Eriks
+and Unterkalmsteiner, Michael
+and Gorschek, Tony",
+title="Software engineering in start-up companies: An analysis of 88 experience reports",
+journal="Empirical Software Engineering",
+year="2019",
+month="Feb",
+day="01",
+volume="24",
+number="1",
+pages="68--102",
+abstract="Start-up companies have become an important supplier of innovation and software-intensive products. The flexibility and reactiveness of start-ups enables fast development and launch of innovative products. However, a majority of software start-up companies fail before achieving any success. Among other factors, poor software engineering could be a significant contributor to the challenges experienced by start-ups. However, the state-of-practice of software engineering in start-ups, as well as the utilization of state-of-the-art is largely an unexplored area.",
+issn="1573-7616",
+doi="10.1007/s10664-018-9620-y",
+url="https://doi.org/10.1007/s10664-018-9620-y"
+}
+
+
+
+@InProceedings{Giardino2015,
+author="Giardino, Carmine
+and Bajwa, Sohaib Shahid
+and Wang, Xiaofeng
+and Abrahamsson, Pekka",
+editor="Lassenius, Casper
+and Dings{\o}yr, Torgeir
+and Paasivaara, Maria",
+title="Key Challenges in Early-Stage Software Startups",
+booktitle="Agile Processes in Software Engineering and Extreme Programming",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="52--63",
+abstract="Software startups are newly created companies designed to grow fast. The uncertainty of new markets and development of cutting-edge technologies pose challenges different from those faced by more mature companies. In this study, we focus on exploring the key challenges that early-stage software startups have to cope with from idea conceptualization to the first time to market. To investigate the key challenges, we used a mixed-method research approach which includes both a large-scale survey of 5389 responses and an in-depth multiple-case study. The initial findings reveal that thriving in technology uncertainty and acquiring the first paying customer are among the top challenges, perceived and experienced by early-stage software startups. Our study implies deeper issues that early-stage software startups need to address effectively in validating the problem-solution fit.",
+isbn="978-3-319-18612-2"
+}
+
+@Inbook{Meuser2009,
+author="Meuser, Michael
+and Nagel, Ulrike",
+editor="Bogner, Alexander
+and Littig, Beate
+and Menz, Wolfgang",
+title="The Expert Interview and Changes in Knowledge Production",
+bookTitle="Interviewing Experts",
+year="2009",
+publisher="Palgrave Macmillan UK",
+address="London",
+pages="17--42",
+abstract="The expert interview as a method of qualitative empirical research, designed to explore expert knowledge, has been developed considerably since the early 1990s. A number of readers has been published1 and thus a gap in the methods' literature has been dealt with, much to the benefit of many disciplines and fields of research in the social sciences. It can be assumed that through increased reflection on methodical issues research into experts' knowledge has gained in professionalism and quality.2",
+isbn="978-0-230-24427-6",
+doi="10.1057/9780230244276_2",
+url="https://doi.org/10.1057/9780230244276_2"
+}
+
+
+
+@Inbook{Bogner2009,
+author="Bogner, Alexander
+and Menz, Wolfgang",
+editor="Bogner, Alexander
+and Littig, Beate
+and Menz, Wolfgang",
+title="The Theory-Generating Expert Interview: Epistemological Interest, Forms of Knowledge, Interaction",
+bookTitle="Interviewing Experts",
+year="2009",
+publisher="Palgrave Macmillan UK",
+address="London",
+pages="43--80",
+abstract="Expert interviews are a good example of the way in which the everyday practice of social research and theoretical consideration of this practice do not always run parallel to one another. The use of particular methods sometimes precedes their general theoretical reflection. For many years, the widely held view was that expert interviews were conducted frequently but only rarely thought through (Meuser and Nagel, 1991). Only in recent years has the debate about expert interviews gradually become more concrete (see Bogner and Menz, 2008). However, this has certainly not led to a situation in which the different definitions and methodological conceptions of expert interviews have moved closer together. Even today there are disputes not only about how expert interviews can be placed on a secure methodological footing, but also about whether this is even possible in principle.",
+isbn="978-0-230-24427-6",
+doi="10.1057/9780230244276_3",
+url="https://doi.org/10.1057/9780230244276_3"
+}
+
+
+
+@inproceedings{vamos/NjimaDemeyer19,
+  author    = {Mercy Njima and
+               Serge Demeyer},
+  title     = {An Exploratory Study on Migrating Single-Products towards Product
+               Lines in Startup Contexts},
+  booktitle = {Proceedings of the 13th International Workshop on Variability Modelling
+               of Software-Intensive Systems, {VAMOS} 2019, Leuven, Belgium, February
+               06-08, 2019},
+  pages     = {10:1--10:6},
+  year      = {2019},
+  crossref  = {DBLP:conf/vamos/2019},
+  url       = {https://doi.org/10.1145/3302333.3302347},
+  doi       = {10.1145/3302333.3302347},
+  timestamp = {Mon, 25 Feb 2019 14:40:13 +0100},
+  biburl    = {https://dblp.org/rec/bib/conf/vamos/NjimaD19},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inbook{SanchezGordon2016,
+author = {S{\'a}nchez-Gord{\'o}n, Mary and Colomo-Palacios, Ricardo and de Amescua, Antonio and O’Connor, Rory},
+year = {2016},
+month = {09},
+pages = {109-136},
+title = {The Route to Software Process Improvement in Small- and Medium-Sized Enterprises},
+isbn = {978-3-319-31543-0},
+doi = {10.1007/978-3-319-31545-4-7}
+}
+
+@article{Tom2013,
+author = {Tom, Edith and Aurum, Aybüke and Vidgen, Richard},
+year = {2013},
+month = {06},
+pages = {1498–1516},
+title = {An exploration of technical debt},
+volume = {86},
+journal = {Journal of Systems and Software},
+doi = {10.1016/j.jss.2012.12.052}
+}
+
+@inproceedings{Suominen2017SoftwareSF,
+  title={Software Start-up Failure: An Exploratory Study on the Impact of Investment},
+  author={Arho Suominen and Sami Hyrynsalmi and Marko Sepp{\"a}nen and Kaisa Still and Leena Aarikka-Stenroos},
+  booktitle={IWSECO},
+  year={2017}
+}
+
+@article{KlotinsTSE2019,
+author = {Klotins, Eriks and Unterkalmsteiner, Michael and Chatzipetrou, Panagiota and Gorschek, Tony and Prikladniki, Rafael and Tripathi, Nirnaya and Pompermaier, Leandro},
+year = {2019},
+month = {02},
+pages = {1-1},
+title = {A progression model of software engineering goals, challenges, and practices in start-ups},
+volume = {PP},
+journal = {IEEE Transactions on Software Engineering},
+doi = {10.1109/TSE.2019.2900213}
+}
+
+
+@InProceedings{Laporte2008,
+author="Laporte, Claude Y.
+and Alexandre, Simon
+and O'Connor, Rory V.",
+editor="O'Connor, Rory V.
+and Baddoo, Nathan
+and Smolander, Kari
+and Messnarz, Richard",
+title="A Software Engineering Lifecycle Standard for Very Small Enterprises",
+booktitle="Software Process Improvement",
+year="2008",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="129--141",
+isbn="978-3-540-85936-9"
+}
+
+@article{Gacek2001,
+author = {Gacek, Cristina and Knauber, Peter and Schmid, Klaus and Clements, Paul},
+year = {2001},
+month = {01},
+pages = {},
+title = {Successful Software Product Line Development in a Small Organization}
+}
+
+@inproceedings{Sibw/Klotins18,
+  author    = {Eriks Klotins},
+  title     = {Software start-ups through an empirical lens: are start-ups snowflakes?},
+  booktitle = {Proceedings of the International Workshop on Software-intensive Business:
+               Start-ups, Ecosystems and Platforms (SiBW 2018), Espoo, Finland, December
+               3, 2018.},
+  pages     = {1--14},
+  year      = {2018},
+  crossref  = {DBLP:conf/sibw/2018},
+  url       = {http://ceur-ws.org/Vol-2305/paper01.pdf},
+  timestamp = {Tue, 12 Mar 2019 16:07:30 +0100},
+  biburl    = {https://dblp.org/rec/bib/conf/sibw/Klotins18},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@book{Jacobson:1997,
+ author = {Jacobson, Ivar and Griss, Martin and Jonsson, Patrik},
+ title = {Software Reuse: Architecture, Process and Organization for Business Success},
+ year = {1997},
+ isbn = {0-201-92476-5},
+ publisher = {ACM Press/Addison-Wesley Publishing Co.},
+ address = {New York, NY, USA},
+}            
+
+@article{DASILVA2014189,
+title = "Software product line scoping and requirements engineering in a small and medium-sized enterprise: An industrial case study",
+journal = "Journal of Systems and Software",
+volume = "88",
+pages = "189 - 206",
+year = "2014",
+issn = "0164-1212",
+doi = "https://doi.org/10.1016/j.jss.2013.10.040",
+url = "http://www.sciencedirect.com/science/article/pii/S0164121213002598",
+author = "Ivonei Freitas da Silva and Paulo Anselmo da Mota Silveira Neto and Pádraig O’Leary and Eduardo Santana de Almeida and Silvio Romero de Lemos Meira",
+keywords = "Requirements engineering, Agile methods, Software product line scoping",
+}
+
+@inproceedings{HEYMANS2004SoftwarePL,
+  title={Software Product Lines : State of the art},
+  author={Patrick Heymans and Jean-Christophe Trigaux},
+  year={2004}
+}
+
+@inproceedings{Antkiewicz:2014,
+ author = {Antkiewicz, Micha\l and Ji, Wenbin and Berger, Thorsten and Czarnecki, Krzysztof and Schmorleiz, Thomas and L\"{a}mmel, Ralf and St\u{a}nciulescu, \&\#536;tefan and W\k{a}sowski, Andrzej and Schaefer, Ina},
+ title = {Flexible Product Line Engineering with a Virtual Platform},
+ booktitle = {Companion Proceedings of the 36th International Conference on Software Engineering},
+ series = {ICSE Companion 2014},
+ year = {2014},
+ isbn = {978-1-4503-2768-8},
+ location = {Hyderabad, India},
+ pages = {532--535},
+ numpages = {4},
+ url = {http://doi.acm.org/10.1145/2591062.2591126},
+ doi = {10.1145/2591062.2591126},
+ acmid = {2591126},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {clone management, features, product line engineering, virtual platform},
+} 
+
+@book{Shull:2007,
+ author = {Shull, Forrest and Singer, Janice and Sj{\o}berg, Dag I.K.},
+ title = {Guide to Advanced Empirical Software Engineering},
+ year = {2007},
+ isbn = {184800043X},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+@INPROCEEDINGS{Rincon2018, 
+author={L. Rincón and R. Mazo and C. Salinesi}, 
+booktitle={2018 12th International Conference on Research Challenges in Information Science (RCIS)}, 
+title={APPLIES: A framework for evaluAting organization's motivation and preparation for adopting product lines}, 
+year={2018}, 
+volume={}, 
+number={}, 
+pages={1-12}, 
+keywords={decision making;software product lines;APPLIES;product line solution;product line approach;organization motivation evaluation;software industry;Companies;Interviews;Production;Encoding;Systematics;Instruments;product lines;product line adoption;product line potential;product line motivation;product line preparation;product line readiness}, 
+doi={10.1109/RCIS.2018.8406641}, 
+ISSN={2151-1357}, 
+month={May},}
+
+@InProceedings{Fritsch2004,
+author="Fritsch, Claudia
+and Hahn, Ralf",
+editor="Nord, Robert L.",
+title="Product Line Potential Analysis",
+booktitle="Software Product Lines",
+year="2004",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="228--237",
+abstract="A Product Line Potential Analysis enables us to make a quick decision as to whether the product line approach (PLA) is suitable for a given set of products and target market. The PLA framework offers no support for this as yet.",
+isbn="978-3-540-28630-1"
+}
+
+
+
+@INPROCEEDINGS{1231223, 
+author={C. Riva and C. Del Rosso}, 
+booktitle={Sixth International Workshop on Principles of Software Evolution, 2003. Proceedings.}, 
+title={Experiences with software product family evolution}, 
+year={2003}, 
+volume={}, 
+number={}, 
+pages={161-169}, 
+keywords={software architecture;software prototyping;object-oriented programming;software product family evolution;migration path;copy-paste approach;time-to-market;software platform;architectural integrity;architecture assessment;architecture reconstruction;Nokia case studies;software components;Embedded software;Computer architecture;Hardware;Computer industry;Delay estimation;Investments;Software architecture;Time to market;Throughput;Production}, 
+doi={10.1109/IWPSE.2003.1231223}, 
+ISSN={}, 
+month={Sept},}
+
+@article{Catal:2009,
+ author = {Catal, Cagatay},
+ title = {Barriers to the Adoption of Software Product Line Engineering},
+ journal = {SIGSOFT Softw. Eng. Notes},
+ issue_date = {November 2009},
+ volume = {34},
+ number = {6},
+ month = dec,
+ year = {2009},
+ issn = {0163-5948},
+ pages = {1--4},
+ numpages = {4},
+ url = {http://doi.acm.org/10.1145/1640162.1640164},
+ doi = {10.1145/1640162.1640164},
+ acmid = {1640164},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {commonality, core asset development, product families, software product lines, software reuse, variability},
+} 
+
+
+@Techreport{Yau,
+  author =       "Alex Yau and Christian Murphy",
+  year =         "2013",
+  title =        "Is a Rigorous Agile Methodology the Best Development Strategy for Small Scale Tech Startups?",
+  institution =  "Penn Engineering",
+  url =         "http://repository.upenn.edu/cis_reports/980",
+  number =       "MS-CIS-13-01",
+  address =      "",
+  month =        "",
+  note =         "",
+}
+
+@misc{beck2001agile,
+  added-at = {2007-12-30T11:39:05.000+0100},
+  author = {Beck, Kent and Beedle, Mike and van Bennekum, Arie and Cockburn, Alistair and Cunningham, Ward and Fowler, Martin and Grenning, James and Highsmith, Jim and Hunt, Andrew and Jeffries, Ron and Kern, Jon and Marick, Brian and Martin, Robert C. and Mellor, Steve and Schwaber, Ken and Sutherland, Jeff and Thomas, Dave},
+  biburl = {https://www.bibsonomy.org/bibtex/28954248a545d88dd2c0e688d1c7e2f9d/juve},
+  booktitle = {Manifesto for Agile Software Development},
+  description = {Manifesto for Agile Software Development},
+  interhash = {098cc7e185f10c3da390459a01e0d535},
+  intrahash = {8954248a545d88dd2c0e688d1c7e2f9d},
+  keywords = {imported},
+  timestamp = {2007-12-30T11:39:05.000+0100},
+  title = {Manifesto for Agile Software Development},
+  url = {http://www.agilemanifesto.org/},
+  year = 2001
+}
+
+
+@INPROCEEDINGS{Clone6498452, 
+author={Y. Dubinsky and J. Rubin and T. Berger and S. Duszynski and M. Becker and K. Czarnecki}, 
+booktitle={2013 17th European Conference on Software Maintenance and Reengineering}, 
+title={An Exploratory Study of Cloning in Industrial Software Product Lines}, 
+year={2013}, 
+volume={}, 
+number={}, 
+pages={25-34}, 
+keywords={DP industry;product development;software reusability;cloning exploratory study;industrial software product lines;single copy software product line representation;software re-engineering activity;systematic software reuse;code cloning;cloning culture;Cloning;Software;Interviews;Companies;Electronic mail;Educational institutions;software product line;cloned product variants;exploratory study}, 
+doi={10.1109/CSMR.2013.13}, 
+ISSN={1534-5351}, 
+month={March},}
+
+@article{Runeson:2009,
+ author = {Runeson, Per and H\"{o}st, Martin},
+ title = {Guidelines for Conducting and Reporting Case Study Research in Software Engineering},
+ journal = {Empirical Softw. Engg.},
+ issue_date = {April     2009},
+ volume = {14},
+ number = {2},
+ month = apr,
+ year = {2009},
+ issn = {1382-3256},
+ pages = {131--164},
+ numpages = {34},
+ url = {http://dx.doi.org/10.1007/s10664-008-9102-8},
+ doi = {10.1007/s10664-008-9102-8},
+ acmid = {1519324},
+ publisher = {Kluwer Academic Publishers},
+ address = {Hingham, MA, USA},
+ keywords = {Case study, Checklists, Guidelines, Research methodology},
+} 
+
+@inproceedings{Stol:2016,
+ author = {Stol, Klaas-Jan and Ralph, Paul and Fitzgerald, Brian},
+ title = {Grounded Theory in Software Engineering Research: A Critical Review and Guidelines},
+ booktitle = {Proceedings of the 38th International Conference on Software Engineering},
+ series = {ICSE '16},
+ year = {2016},
+ isbn = {978-1-4503-3900-1},
+ location = {Austin, Texas},
+ pages = {120--131},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2884781.2884833},
+ doi = {10.1145/2884781.2884833},
+ acmid = {2884833},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {grounded theory, guidelines, review, software engineering},
+}
+
+@book{GroundedTheorybook,
+author = {L. Strauss, Anselm and M. Corbin, Juliet},
+year = {1997},
+month = {01},
+pages = {296},
+title = {Grounded Theory in Practice},
+volume = {28},
+isbn = {9780761907480},
+journal = {Contemporary Sociology},
+doi = {10.2307/2655359}
+}
+
+@inproceedings{daSilva:2012,
+ author = {da Silva, Ivonei Freitas},
+ title = {An Agile Approach for Software Product Lines Scoping},
+ booktitle = {Proceedings of the 16th International Software Product Line Conference - Volume 2},
+ series = {SPLC '12},
+ year = {2012},
+ isbn = {978-1-4503-1095-6},
+ location = {Salvador, Brazil},
+ pages = {225--228},
+ numpages = {4},
+ url = {http://doi.acm.org/10.1145/2364412.2364450},
+ doi = {10.1145/2364412.2364450},
+ acmid = {2364450},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Agile, features, scoping, software product lines},
+}
+
+@inproceedings{Li:2017:REV:3106195.3106207,
+	author = {Li, Yang and Schulze, Sandro and Saake, Gunter},
+	title = {Reverse Engineering Variability from Natural Language Documents: A Systematic Literature Review},
+	booktitle = {Proceedings of the 21st International Systems and Software Product Line Conference - Volume A},
+	series = {SPLC '17},
+	year = {2017},
+	isbn = {978-1-4503-5221-5},
+	location = {Sevilla, Spain},
+	pages = {133--142},
+	numpages = {10},
+	url = {http://doi.acm.org/10.1145/3106195.3106207},
+	doi = {10.1145/3106195.3106207},
+	acmid = {3106207},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {Feature Identification, Natural Language Documents, Reverse Engineering, Software Product Lines, Systematic Literature Review, Variability Extraction},
+} 
+
+@inproceedings{Carmel1994,
+author = {Carmel, Erran},
+year = {1994},
+month = {02},
+pages = {498 - 507},
+title = {Time-to-completion in software package startups},
+isbn = {0-8186-5080-X},
+doi = {10.1109/HICSS.1994.323468}
+}
+
+@article{Unterkalmsteiner16,
+	author    = {Michael Unterkalmsteiner and
+	Pekka Abrahamsson and
+	Xiaofeng Wang and
+	Anh Nguyen{-}Duc and
+	Syed M. Ali Shah and
+	Sohaib Shahid Bajwa and
+	Guido H. Baltes and
+	Kieran Conboy and
+	Eoin Cullina and
+	Denis Dennehy and
+	Henry Edison and
+	Carlos Fern{\'{a}}ndez{-}S{\'{a}}nchez and
+	Juan Garbajosa and
+	Tony Gorschek and
+	Eriks Klotins and
+	Laura Hokkanen and
+	Fabio Kon and
+	Ilaria Lunesu and
+	Michele Marchesi and
+	Lorraine Morgan and
+	Markku Oivo and
+	Christoph Selig and
+	Pertti Sepp{\"{a}}nen and
+	Roger Sweetman and
+	Pasi Tyrv{\"{a}}inen and
+	Christina Ungerer and
+	Agust{\'{\i}}n Yag{\"{u}}e},
+	title     = {Software Startups - {A} Research Agenda},
+	journal   = {e-Informatica},
+	volume    = {10},
+	number    = {1},
+	pages     = {89--124},
+	year      = {2016},
+	url       = {https://doi.org/10.5277/e-Inf160105},
+	doi       = {10.5277/e-Inf160105},
+	timestamp = {Sat, 16 Sep 2017 12:05:36 +0200},
+	biburl    = {http://dblp.org/rec/bib/journals/eInformatica/Unterkalmsteiner16},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@INPROCEEDINGS{Krut2008, 
+author={R. {Krut} and S. {Cohen}}, 
+booktitle={2008 12th International Software Product Line Conference}, 
+title={Service-Oriented Architectures and Software Product Lines - Putting Both Together}, 
+year={2008}, 
+volume={}, 
+number={}, 
+pages={383-383}, 
+keywords={product development;software architecture;software maintenance;software reusability;Web services;service-oriented architecture;software product line;software development;asset reusability;enterprise solution maintenance;business requirement;Web service;Service oriented architecture;Conferences;Software;Web services;Software engineering;Organizations;Gallium}, 
+doi={10.1109/SPLC.2008.71}, 
+ISSN={}, 
+month={Sep.},}
+
+@inproceedings{Hetrick:2006,
+ author = {Hetrick, William A. and Krueger, Charles W. and Moore, Joseph G.},
+ title = {Incremental Return on Incremental Investment: Engenio's Transition to Software Product Line Practice},
+ booktitle = {Companion to the 21st ACM SIGPLAN Symposium on Object-oriented Programming Systems, Languages, and Applications},
+ series = {OOPSLA '06},
+ year = {2006},
+ isbn = {1-59593-491-X},
+ location = {Portland, Oregon, USA},
+ pages = {798--804},
+ numpages = {7},
+ url = {http://doi.acm.org/10.1145/1176617.1176726},
+ doi = {10.1145/1176617.1176726},
+ acmid = {1176726},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {incremental methods, software product lines, transition to software product line practice},
+} 
+
+@article{Bajwa:2017Pivot,
+	author = {Bajwa, Sohaib Shahid and Wang, Xiaofeng and Duc, Anh Nguyen and Chanin, Rafael Matone and Prikladnicki, Rafael and Pompermaier, Leandro Bento and Abrahamsson, Pekka},
+	title = {Start-Ups Must Be Ready to Pivot},
+	journal = {IEEE Softw.},
+	issue_date = {May 2017},
+	volume = {34},
+	number = {3},
+	month = may,
+	year = {2017},
+	issn = {0740-7459},
+	pages = {18--22},
+	numpages = {5},
+	url = {https://doi.org/10.1109/MS.2017.84},
+	doi = {10.1109/MS.2017.84},
+	acmid = {3101525},
+	publisher = {IEEE Computer Society Press},
+	address = {Los Alamitos, CA, USA},
+} 
+
+@INPROCEEDINGS{Edison2016Case, 
+	author={H. Edison and X. Wang and P. Abrahamsson}, 
+	booktitle={2016 42th Euromicro Conference on Software Engineering and Advanced Applications (SEAA)}, 
+	title={Product Innovation through Internal Startup in Large Software Companies: A Case Study}, 
+	year={2016}, 
+	volume={}, 
+	number={}, 
+	pages={128-135}, 
+	keywords={innovation management;software houses;software product lines;internal corporate venturing model;internal startup;large software companies;lean startup;product development model;software product innovation;Companies;Context;Interviews;Product development;Software;Technological innovation;Lean startup;case study;internal startup;large software companies;software product innovation}, 
+	doi={10.1109/SEAA.2016.36}, 
+	ISSN={2376-9505}, 
+	month={Aug},}
+
+@Inbook{Edison2016,
+	author="Edison, Henry",
+	editor="Abrahamsson, Pekka
+	and Jedlitschka, Andreas
+	and Nguyen Duc, Anh
+	and Felderer, Michael
+	and Amasaki, Sousuke
+	and Mikkonen, Tommi",
+	title="Software Product Innovation Through Startup Experimentation in Large Companies",
+	bookTitle="Product-Focused Software Process Improvement: 17th International Conference, PROFES 2016, Trondheim, Norway, November 22-24, 2016, Proceedings",
+	year="2016",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="751--756",
+	abstract="Startups are king of innovation. Their innovative products not only have changed our lives today but also put long-established players under pressure. Corporate management is now looking for ways to innovate like startup. Along with it, awareness and use of the Lean start-up method has grown rapidly amongst the software startup community and large companies in recent years. However, how large companies could benefit from this method is still not fully understood. To shed a light on this issue, we conducted a multiple case study with 5 internal startups from different large companies.",
+	isbn="978-3-319-49094-6",
+	doi="10.1007/978-3-319-49094-6_65",
+	url="https://doi.org/10.1007/978-3-319-49094-6_65"
+}
+
+
+
+@Inbook{Wang2016,
+	author="Wang, Xiaofeng
+	and Edison, Henry
+	and Bajwa, Sohaib Shahid
+	and Giardino, Carmine
+	and Abrahamsson, Pekka",
+	editor="Sharp, Helen
+	and Hall, Tracy",
+	title="Key Challenges in Software Startups Across Life Cycle Stages",
+	bookTitle="Agile Processes, in Software Engineering, and Extreme Programming: 17th International Conference, XP 2016, Edinburgh, UK, May 24-27, 2016, Proceedings",
+	year="2016",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="169--182",
+	abstract="Software startups are challenging endeavours, with various road blocks on their path to success. The current understanding of the challenges that software startups may encounter is very limited. In this paper, we use the research framework of learning and product development stages to analyse the key challenges that software startups have to deal with at different life cycle stages, from problem definition to solution validation and from concept to mature product. Based on an analysis of the empirical data collected by a large survey of 4100 startups, we find out that what perceived as biggest challenges by software startups do vary across different life cycle stages. Building product is the biggest obstacle for software startups, even though its significance decreases when the learning focuses of the startups move from problem to solution and their products mature. Business related challenges such as customer acquisition and scaling are more noticeable at the later stages. Our study raises the awareness of these challenges and suggests to tackle right challenges at the right time.",
+	isbn="978-3-319-33515-5",
+	doi="10.1007/978-3-319-33515-5_14",
+	url="https://doi.org/10.1007/978-3-319-33515-5_14"
+}
+
+@inproceedings{Chanin:2017,
+	author = {Chanin, Rafael and Pompermaier, Leandro and Fraga, Kellen and Sales, Afonso and Prikladnicki, Rafael},
+	title = {Applying Customer Development for Software Requirements in a Startup Development Program},
+	booktitle = {Proceedings of the 1st International Workshop on Software Engineering for Startups},
+	series = {SoftStart '17},
+	year = {2017},
+	isbn = {978-1-5386-2801-0},
+	location = {Buenos Aires, Argentina},
+	pages = {2--5},
+	numpages = {4},
+	url = {https://doi.org/10.1109/SoftStart.2017...3},
+	doi = {10.1109/SoftStart.2017...3},
+	acmid = {3105751},
+	publisher = {IEEE Press},
+	address = {Piscataway, NJ, USA},
+	keywords = {business modeling, business validation, customer development, software requirements, startups},
+}
+
+@article{klotins_software-intensive_2017,
+	title = { Software-intensive product engineering in start-ups: a taxonomy },
+	pages = { 0 },
+	note = { In Print },
+	volume = { 0 },
+	number = { 0 },
+	year = { 2017 },
+	author = { Eriks Klotins and Michael Unterkalmsteiner and Tony Gorschek },
+	journal = { IEEE Software },
+	abstr = { Software start-ups are new companies aiming to launch an innovative product to mass markets fast with minimal resources. However a majority of start-ups fail before realizing their potential. Poor software engineering, among other factors, could be a significant contributor to the challenges experienced by start-ups.
+	Very little is known about the engineering context in start-up companies. On the surface, start-ups are characterized by uncertainty, high risk and minimal resources. However, such characterization is not granular enough to support identification of specific engineering challenges and to devise start-up specific engineering practices.
+	The first step towards understanding on software engineering in start-ups is definition of the Start-up Context Map - a taxonomy of engineering practices, environment factors and goals influencing the engineering process. Goal of the Start-up Context Map is to support further research on the field and to serve as an engineering decision support tool for start-ups. },
+	url = { https://www.lmsteiner.com/papers/klotins_2017_ieeesw.pdf },
+}
+
+
+@ARTICLE{Giardino2016, 
+	author={C. Giardino and N. Paternoster and M. Unterkalmsteiner and T. Gorschek and P. Abrahamsson}, 
+	journal={IEEE Transactions on Software Engineering}, 
+	title={Software Development in Startup Companies: The Greenfield Startup Model}, 
+	year={2016}, 
+	volume={42}, 
+	number={6}, 
+	pages={585-604}, 
+	keywords={software development management;GSM;Greenfield startup model;engineering practices;grounded theory approach;software development strategies;software engineering issues;software startups;state-of-practice investigation;time-to-market;user feedback;Companies;Context;GSM;History;Software;Software engineering;Grounded Theory;Software Development;Software development;Startups;grounded theory;startups}, 
+	doi={10.1109/TSE.2015.2509970}, 
+	ISSN={0098-5589}, 
+	month={June},}
+
+@InProceedings{Terho,
+author="Terho, Henri
+and Suonsyrj{\"a}, Sampo
+and Syst{\"a}, Kari",
+editor="Abrahamsson, Pekka
+and Jedlitschka, Andreas
+and Nguyen Duc, Anh
+and Felderer, Michael
+and Amasaki, Sousuke
+and Mikkonen, Tommi",
+title="The Developers Dilemma: Perfect Product Development or Fast Business Validation?",
+booktitle="Product-Focused Software Process Improvement",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="571--579",
+isbn="978-3-319-49094-6"
+}
+
+
+
+@Inbook{Pantiuchina2017,
+	author="Pantiuchina, Jevgenija
+	and Mondini, Marco
+	and Khanna, Dron
+	and Wang, Xiaofeng
+	and Abrahamsson, Pekka",
+	editor="Baumeister, Hubert
+	and Lichter, Horst
+	and Riebisch, Matthias",
+	title="Are Software Startups Applying Agile Practices? The State of the Practice from a Large Survey",
+	bookTitle="Agile Processes in Software Engineering and Extreme Programming: 18th International Conference, XP 2017, Cologne, Germany, May 22-26, 2017, Proceedings",
+	year="2017",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="167--183",
+	abstract="Software startups operate under various uncertainties and the demand on their ability to deal with change is high. Agile methods are considered a suitable and viable development approach for them. However, the competing needs for speed and quality may render certain agile practices less suitable than others in the startup context. The adoption of agile practices can be further complicated in software startups that adopt the Lean Startup approach. To make the best of agile practices, it is necessary to first understand whether and how they are used in software startups. This study targets at a better understanding of the use of agile practices in software startups, with a particular focus on lean startups. Based on a large survey of 1526 software startups, we examined the use of five agile practices, including quality related (regular refactoring and test first), speed related (frequent release and agile planning) and communication practice (daily standup meeting). The findings show that speed related agile practices are used to a greater extent in comparison to quality practices. Daily standup meeting is least used. Software startups who adopt the Lean Startup approach do not sacrifice quality for speed more than other startups do.",
+	isbn="978-3-319-57633-6",
+	doi="10.1007/978-3-319-57633-6_11",
+	url="https://doi.org/10.1007/978-3-319-57633-6_11"
+}
+
+
+
+@INPROCEEDINGS{Klotins2017, 
+	author={E. Klotins}, 
+	booktitle={2017 IEEE/ACM 1st International Workshop on Software Engineeting for Startups (SoftStart)}, 
+	title={Using the Case Survey Method to Explore Engineering Practices in Software Start-Ups}, 
+	year={2017}, 
+	volume={}, 
+	number={}, 
+	pages={24-26}, 
+	keywords={DP industry;software engineering;case survey method;engineering practices;hybrid research method;software engineering;software start-ups;Companies;Context;Interviews;Sociology;Software;Software engineering;Statistics;Start-up;case survey;research method}, 
+	doi={10.1109/SoftStart.2017.4}, 
+	ISSN={}, 
+	month={May},}
+
+@Inbook{Terho2016,
+	author="Terho, Henri
+	and Suonsyrj{\"a}, Sampo
+	and Syst{\"a}, Kari",
+	editor="Abrahamsson, Pekka
+	and Jedlitschka, Andreas
+	and Nguyen Duc, Anh
+	and Felderer, Michael
+	and Amasaki, Sousuke
+	and Mikkonen, Tommi",
+	title="The Developers Dilemma: Perfect Product Development or Fast Business Validation?",
+	bookTitle="Product-Focused Software Process Improvement: 17th International Conference, PROFES 2016, Trondheim, Norway, November 22-24, 2016, Proceedings",
+	year="2016",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="571--579",
+	abstract="To find a fast-track to profitability, a startup needs to streamline and speed up two vital processes -- developing novel products and finding new markets for their products. These two goals are typically opposed to each other, business development requiring quick iteration and product development requiring focus on quality. This difference in mindsets, where the focus should be on the balance of quality to the business experimentation causes a conflicting environment for the developers to develop products. This problem is aggravated in a startup environment, where the reasons for product failure are not clear, increasing the frustrations felt by the developers. Clear ways to communicate the product goals and even successes between management and developers is needed to create an environment for success. This balancing act between quality and speed to achieve fast product iteration is the developers dilemma.",
+	isbn="978-3-319-49094-6",
+	doi="10.1007/978-3-319-49094-6_42",
+	url="https://doi.org/10.1007/978-3-319-49094-6_42"
+}
+
+@inproceedings{Cunningham:1992,
+ author = {Cunningham, Ward},
+ title = {The WyCash Portfolio Management System},
+ booktitle = {Addendum to the Proceedings on Object-oriented Programming Systems, Languages, and Applications (Addendum)},
+ series = {OOPSLA '92},
+ year = {1992},
+ isbn = {0-89791-610-7},
+ location = {Vancouver, British Columbia, Canada},
+ pages = {29--30},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/157709.157715},
+ doi = {10.1145/157709.157715},
+ acmid = {157715},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{Chicote:2017,
+	author = {Chicote, Marcos},
+	title = {Startups and Technical Debt: Managing Technical Debt with Visual Thinking},
+	booktitle = {Proceedings of the 1st International Workshop on Software Engineering for Startups},
+	series = {SoftStart '17},
+	year = {2017},
+	isbn = {978-1-5386-2801-0},
+	location = {Buenos Aires, Argentina},
+	pages = {10--11},
+	numpages = {2},
+	url = {https://doi.org/10.1109/SoftStart.2017...6},
+	doi = {10.1109/SoftStart.2017...6},
+	acmid = {3105753},
+	publisher = {IEEE Press},
+	address = {Piscataway, NJ, USA},
+	keywords = {startups, technical debt, visual thinking},
+} 
+
+@inproceedings{Stochel2012ValueBasedTD,
+  title={Value-Based Technical Debt Model and Its Application},
+  author={Marek Grzegorz Stochel and Mariusz R. Wawrowski and Magdalena Rabiej},
+  booktitle={ICSEA 2012},
+  year={2012}
+}
+
+@Inbook{Yli-Huumo2014,
+	author="Yli-Huumo, Jesse
+	and Maglyas, Andrey
+	and Smolander, Kari",
+	editor="Jedlitschka, Andreas
+	and Kuvaja, Pasi
+	and Kuhrmann, Marco
+	and M{\"a}nnist{\"o}, Tomi
+	and M{\"u}nch, J{\"u}rgen
+	and Raatikainen, Mikko",
+	title="The Sources and Approaches to Management of Technical Debt: A Case Study of Two Product Lines in a Middle-Size Finnish Software Company",
+	bookTitle="Product-Focused Software Process Improvement: 15th International Conference, PROFES 2014, Helsinki, Finland, December 10-12, 2014. Proceedings",
+	year="2014",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="93--107",
+	abstract="Fierce competition in the software market forces companies to release their product under tough time constraints. The competition makes companies reactive and they need to release new versions often. To achieve this need for speed, companies take shortcuts to reach deadlines. These shortcuts and resulting omitted quality are called technical debt. We investigated one middle-size Finnish software company with two independent product lines and interviewed 12 persons in different positions to understand the causes and effects of technical debt. We were also interested in specific strategies and practices for managing technical debt. The results showed that technical debt is mostly formed as a result of intentional decisions made during the project to reach deadlines. Customer satisfaction was identified as the main reason for taking technical debt in short-term but it turned to economic consequences and quality issues in the longer perspective. Interestingly, neither of the product lines had any specific management plan for reducing technical debt but several practices have been identified.",
+	isbn="978-3-319-13835-0",
+	doi="10.1007/978-3-319-13835-0_7",
+	url="https://doi.org/10.1007/978-3-319-13835-0_7"
+}
+
+@inproceedings{Curtis:2012,
+	author = {Curtis, Bill and Sappidi, Jay and Szynkarski, Alexandra},
+	title = {Estimating the Size, Cost, and Types of Technical Debt},
+	booktitle = {Proceedings of the Third International Workshop on Managing Technical Debt},
+	series = {MTD '12},
+	year = {2012},
+	isbn = {978-1-4673-1749-8},
+	location = {Zurich, Switzerland},
+	pages = {49--53},
+	numpages = {5},
+	url = {http://dl.acm.org/citation.cfm?id=2666036.2666045},
+	acmid = {2666045},
+	publisher = {IEEE Press},
+	address = {Piscataway, NJ, USA},
+	keywords = {benchmarking, software metrics, software structural quality, static analysis, technical debt},
+} 
+
+@Inbook{Nguyen-Duc2017,
+	author="Nguyen-Duc, Anh
+	and Wang, Xiaofeng
+	and Abrahamsson, Pekka",
+	editor="Baumeister, Hubert
+	and Lichter, Horst
+	and Riebisch, Matthias",
+	title="What Influences the Speed of Prototyping? An Empirical Investigation of Twenty Software Startups",
+	bookTitle="Agile Processes in Software Engineering and Extreme Programming: 18th International Conference, XP 2017, Cologne, Germany, May 22-26, 2017, Proceedings",
+	year="2017",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="20--36",
+	abstract="It is essential for startups to quickly experiment business ideas by building tangible prototypes and collecting user feedback on them. As prototyping is an inevitable part of learning for early stage software startups, how fast startups can learn depends on how fast they can prototype. Despite of the importance, there is a lack of research about prototyping in software startups. In this study, we aimed at understanding what are factors influencing different types of prototyping activities. We conducted a multiple case study on twenty European software startups. The results are two folds; firstly we propose a prototype-centric learning model in early stage software startups. Secondly, we identify factors occur as barriers but also facilitators for prototyping in early stage software startups. The factors are grouped into (1) artifacts, (2) team competence, (3) collaboration, (4) customer and (5) process dimensions. To speed up a startup's progress at the early stage, it is important to incorporate the learning objective into a well-defined collaborative approach of prototyping.",
+	isbn="978-3-319-57633-6",
+	doi="10.1007/978-3-319-57633-6_2",
+	url="https://doi.org/10.1007/978-3-319-57633-6_2"
+}
+
+@INPROCEEDINGS{Ghabach2018, 
+author={E. {Ghabach} and M. {Blay-Fornarino} and F. E. {Khoury} and B. {Baz}}, 
+booktitle={2018 12th International Conference on Research Challenges in Information Science (RCIS)}, 
+title={Clone-and-Own software product derivation based on developer preferences and cost estimation}, 
+year={2018}, 
+volume={}, 
+number={}, 
+pages={1-6}, 
+keywords={costing;software maintenance;software prototyping;software reusability;software engineer selection;cost estimation;software products;common reuse practice;software systems;clone-and-own software product derivation;Software;Cloning;Feature extraction;Correlation;Customer relationship management;Estimation;Cathode ray tubes;Clone-and-own;product derivation;software reuse}, 
+doi={10.1109/RCIS.2018.8406682}, 
+ISSN={2151-1357}, 
+month={May},}
+
+@inproceedings{Lapena:2016,
+ author = {Lape\~{n}a, Ra\'{u}l and Ballarin, Manuel and Cetina, Carlos},
+ title = {Towards Clone-and-own Support: Locating Relevant Methods in Legacy Products},
+ booktitle = {Proceedings of the 20th International Systems and Software Product Line Conference},
+ series = {SPLC '16},
+ year = {2016},
+ isbn = {978-1-4503-4050-2},
+ location = {Beijing, China},
+ pages = {194--203},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/2934466.2934485},
+ doi = {10.1145/2934466.2934485},
+ acmid = {2934485},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {clone and own, families of software products, software reuse},
+}
+
+@INPROCEEDINGS{Dubinsky2013, 
+author={Y. {Dubinsky} and J. {Rubin} and T. {Berger} and S. {Duszynski} and M. {Becker} and K. {Czarnecki}}, 
+booktitle={2013 17th European Conference on Software Maintenance and Reengineering}, 
+title={An Exploratory Study of Cloning in Industrial Software Product Lines}, 
+year={2013}, 
+volume={}, 
+number={}, 
+pages={25-34}, 
+keywords={DP industry;product development;software reusability;cloning exploratory study;industrial software product lines;single copy software product line representation;software re-engineering activity;systematic software reuse;code cloning;cloning culture;Cloning;Software;Interviews;Companies;Electronic mail;Educational institutions;software product line;cloned product variants;exploratory study}, 
+doi={10.1109/CSMR.2013.13}, 
+ISSN={1534-5351}, 
+month={March},}
+
+@Inbook{Bajwa2016,
+	author="Bajwa, Sohaib Shahid
+	and Wang, Xiaofeng
+	and Duc, Anh Nguven
+	and Abrahamsson, Pekka",
+	editor="Maglyas, Andrey
+	and Lamprecht, Anna-Lena",
+	title="How Do Software Startups Pivot? Empirical Results from a Multiple Case Study",
+	bookTitle="Software Business: 7th International Conference, ICSOB 2016, Ljubljana, Slovenia, June 13-14, 2016, Proceedings",
+	year="2016",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="169--176",
+	abstract="In order to handle intense time pressure and survive in dynamic market, software startups have to make crucial decisions constantly on whether to change directions or stay on chosen courses, or in the terms of Lean Startup, to pivot or to persevere. The existing research and knowledge on software startup pivots are very limited. In this study, we focused on understanding the pivoting processes of software startups, and identified the triggering factors and pivot types. To achieve this, we employed a multiple case study approach, and analyzed the data obtained from four software startups. The initial findings show that different software startups make different types of pivots related to business and technology during their product development life cycle. The pivots are triggered by various factors including negative customer feedback.",
+	isbn="978-3-319-40515-5",
+	doi="10.1007/978-3-319-40515-5_14",
+	url="https://doi.org/10.1007/978-3-319-40515-5_14"
+}
+
+
+@Article{Bajwa2017,
+	author="Bajwa, Sohaib Shahid
+	and Wang, Xiaofeng
+	and Nguyen Duc, Anh
+	and Abrahamsson, Pekka",
+	title="``Failures'' to be celebrated: an analysis of major pivots of software startups",
+	journal="Empirical Software Engineering",
+	year="2017",
+	month="Oct",
+	day="01",
+	volume="22",
+	number="5",
+	pages="2373--2408",
+	abstract="In the context of software startups, project failure is embraced actively and considered crucial to obtain validated learning that can lead to pivots. A pivot is the strategic change of a business concept, product or the different elements of a business model. A better understanding is needed on different types of pivots and different factors that lead to failures and trigger pivots, for software entrepreneurial teams to make better decisions under chaotic and unpredictable environment. Due to the nascent nature of the topic, the existing research and knowledge on the pivots of software startups are very limited. In this study, we aimed at identifying the major types of pivots that software startups make during their startup processes, and highlighting the factors that fail software projects and trigger pivots. To achieve this, we conducted a case survey study based on the secondary data of the major pivots happened in 49 software startups. 10 pivot types and 14 triggering factors were identified. The findings show that customer need pivot is the most common among all pivot types. Together with customer segment pivot, they are common market related pivots. The major product related pivots are zoom-in and technology pivots. Several new pivot types were identified, including market zoom-in, complete and side project pivots. Our study also demonstrates that negative customer reaction and flawed business model are the most common factors that trigger pivots in software startups. Our study extends the research knowledge on software startup pivot types and pivot triggering factors. Meanwhile it provides practical knowledge to software startups, which they can utilize to guide their effective decisions on pivoting.",
+	issn="1573-7616",
+	doi="10.1007/s10664-016-9458-0",
+	url="https://doi.org/10.1007/s10664-016-9458-0"
+}
+
+@mastersthesis{IEEEexample:masters,
+	author        = "Nin C. Loh",
+	title         = "How to Manage Technical Debt in a Lean Startup",
+	school        = "Massachusetts Institute of Technology",
+	address       = "Cambridge",
+	year          = "1992"
+}
+
+@article{Li:2015,
+	author = {Li, Zengyang and Avgeriou, Paris and Liang, Peng},
+	title = {A Systematic Mapping Study on Technical Debt and Its Management},
+	journal = {J. Syst. Softw.},
+	issue_date = {March 2015},
+	volume = {101},
+	number = {C},
+	month = mar,
+	year = {2015},
+	issn = {0164-1212},
+	pages = {193--220},
+	numpages = {28},
+	url = {http://dx.doi.org/10.1016/j.jss.2014.12.027},
+	doi = {10.1016/j.jss.2014.12.027},
+	acmid = {2741488},
+	publisher = {Elsevier Science Inc.},
+	address = {New York, NY, USA},
+	keywords = {Systematic mapping study, Technical debt, Technical debt management},
+} 
+
+
+@ARTICLE{Lehman1980, 
+	author={M. M. Lehman}, 
+	journal={Proceedings of the IEEE}, 
+	title={Programs, life cycles, and laws of software evolution}, 
+	year={1980}, 
+	volume={68}, 
+	number={9}, 
+	pages={1060-1076}, 
+	keywords={Application software;Automatic programming;Computer applications;Economic indicators;Environmental economics;Fabrics;Helium;Microprocessors;Productivity;Software maintenance}, 
+	doi={10.1109/PROC.1980.11805}, 
+	ISSN={0018-9219}, 
+	month={Sept},}
+
+@article{Hanssen:2008,
+ author = {Hanssen, Geir K. and F\'{\i}gri, Tor E.},
+ title = {Process Fusion: An Industrial Case Study on Agile Software Product Line Engineering},
+ journal = {J. Syst. Softw.},
+ issue_date = {June, 2008},
+ volume = {81},
+ number = {6},
+ month = jun,
+ year = {2008},
+ issn = {0164-1212},
+ pages = {843--854},
+ numpages = {12},
+ url = {http://dx.doi.org/10.1016/j.jss.2007.10.025},
+ doi = {10.1016/j.jss.2007.10.025},
+ acmid = {1363626},
+ publisher = {Elsevier Science Inc.},
+ address = {New York, NY, USA},
+ keywords = {Agile software development, Software product development, Software product line engineering, Software product management},
+} 
+
+@INPROCEEDINGS{Erdogmus, 
+	author={H. Erdogmus and A. Sillitti and T. Wasserman}, 
+	booktitle={2017 IEEE/ACM 1st International Workshop on Software Engineeting for Startups (SoftStart)}, 
+	title={SOFTStart 2017 Workshop Summary}, 
+	year={2017}, 
+	volume={}, 
+	number={}, 
+	pages={1-1}, 
+	keywords={}, 
+	doi={10.1109/SoftStart.2017.11}, 
+	ISSN={}, 
+	url="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7966482",
+	month={May},}
+
+@ARTICLE{2011arXiv,
+	author = {{ter Beek}, M.~H. and {Gnesi}, S. and {Njima}, M.~N.},
+	title = "{Product Lines for Service Oriented Applications - PL for SOA}",
+	journal = {ArXiv e-prints},
+	archivePrefix = "arXiv",
+	eprint = {1108.2350},
+	primaryClass = "cs.SE",
+	keywords = {Computer Science - Software Engineering},
+	year = 2011,
+	month = aug,
+	adsurl = {http://adsabs.harvard.edu/abs/2011arXiv1108.2350T},
+	adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@inproceedings{Njima2010,
+	author = {Njima, Mercy N. and Sanders, J. W.},
+	title = {Specification-Oriented Orchestration},
+	booktitle = {Proceedings of the 2010 International Conference on Communications and Mobile Computing - Volume 01},
+	series = {CMC '10},
+	year = {2010},
+	pages = {550--554},
+	numpages = {5},
+	acmid = {1827047},
+	publisher = {IEEE Computer Society},
+}
+
+@inproceedings{Nagy2010,
+	author = {Nagy, A. and Njima, M. and Mkrtchyan, L.},
+	title = {A Bayesian Based Method for Agile Software Development Release Planning and Project Health Monitoring},
+	booktitle = {Proceedings of the 2010 International Conference on Intelligent Networking and Collaborative Systems},
+	series = {INCOS '10},
+	year = {2010},
+	pages = {192--199},
+	numpages = {8},
+	acmid = {1935158},
+	publisher = {IEEE Computer Society},
+	keywords = {Agile Software Development, Bayesian Networks, Software Project Management, Decision Support, Intelligent Networks},
+}
+
+@inproceedings{Eloranta:2014,
+	author = {Eloranta, Veli-Pekka},
+	title = {Towards a Pattern Language for Software Start-ups},
+	booktitle = {Proceedings of the 19th European Conference on Pattern Languages of Programs},
+	series = {EuroPLoP '14},
+	year = {2014},
+	location = {Irsee, Germany},
+	pages = {24:1--24:11},
+	articleno = {24},
+	numpages = {11},
+	acmid = {2721965},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {lean start-up, organizational patterns, patterns, software engineering, start-up},
+}
+
+@INPROCEEDINGS{Kajko-Mattsson08,
+	author={Kajko-Mattsson, M. and Nikitina, N.},
+	booktitle={Computer Science and Software Engineering, 2008 International Conference on},
+	title={From Knowing Nothing to Knowing a Little: Experiences Gained from Process Improvement in a Start-Up Company},
+	year={2008},
+	volume={2},
+	pages={617-621},
+	keywords={software development management;ad hoc development;mobile navigation;software organizations;Computer science;Internet;Mobile communication;Mobile handsets;Navigation;Software engineering;Software maintenance;Software systems;Technology management;evolution and maintenance;oral and written communication;release management},
+}
+
+@article{GHANAM2012,
+title = "Making the leap to a software platform strategy: Issues and challenges",
+journal = "Information and Software Technology",
+volume = "54",
+number = "9",
+pages = "968 - 984",
+year = "2012",
+issn = "0950-5849",
+doi = "https://doi.org/10.1016/j.infsof.2012.03.005",
+url = "http://www.sciencedirect.com/science/article/pii/S0950584912000547",
+author = "Yaser Ghanam and Frank Maurer and Pekka Abrahamsson",
+keywords = "Software platform, Software reuse, Platform challenges, Ethnographic study, Grounded Theory",
+}
+
+@book{Clements2001,
+  added-at = {2008-09-15T11:42:14.000+0200},
+  author = {Clements, Paul C. and Northrop, Linda},
+  available = {1},
+  biburl = {https://www.bibsonomy.org/bibtex/218cfb5d792f79120506c1d5440baad7a/ist_spl},
+  category = {General},
+  description = {Computer Science Bibliography Collection},
+  interhash = {cd614386b56e1a8c1d8db57c1a505411},
+  intrahash = {18cfb5d792f79120506c1d5440baad7a},
+  keywords = {fundamentals line product},
+  month = {August},
+  newinversion = {2.19},
+  publisher = {Addison-Wesley},
+  series = {SEI Series in Software Engineering},
+  timestamp = {2008-09-15T11:42:14.000+0200},
+  title = {Software Product Lines: Practices and Patterns},
+  year = 2001
+}
+
+@inproceedings{Bosch2002,
+	author    = {Jan Bosch},
+	title     = {Maturity and Evolution in Software Product Lines: Approaches, Artefacts
+	and Organization},
+	booktitle = {Software Product Lines, Second International Conference, {SPLC} 2,
+	San Diego, CA, USA, August 19-22, 2002, Proceedings},
+	pages     = {257--271},
+	year      = {2002},
+	crossref  = {DBLP:conf/splc/2002},
+	timestamp = {Thu, 30 Jun 2011 15:59:45 +0200},
+	biburl    = {http://dblp.uni-trier.de/rec/bib/conf/splc/Bosch02},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@INPROCEEDINGS{Krueger, 
+author={C. W. Krueger}, 
+booktitle={10th International Software Product Line Conference (SPLC'06)}, 
+title={New methods in software product line development}, 
+year={2006}, 
+volume={}, 
+number={}, 
+pages={95-99}, 
+keywords={product development;software development management;software maintenance;software product line development;software maintenance;software evolution;product line portfolios;Application software;Mass customization;Software reusability;Software maintenance;Computer industry;Software tools;Programming;Logic;Manufacturing automation;Software engineering}, 
+doi={10.1109/SPLINE.2006.1691581}, 
+ISSN={}, 
+month={Aug},}
+
+@incollection{Klotins,
+	year={2015},
+	booktitle={Software Business},
+	volume={210},
+	series={Lecture Notes in Business Information Processing},
+	editor={Fernandes, João M. and Machado, Ricardo J. and Wnuk, Krzysztof},
+	title={Software Engineering Knowledge Areas in Startup Companies: A Mapping Study},
+	publisher={Springer International Publishing},
+	keywords={Startup; Software engineering; Mapping; Engineering practice; Agile; Lean; Small companies; Development of software intensive products},
+	author={Klotins, Eriks and Unterkalmsteiner, Michael and Gorschek, Tony},
+	pages={245-257},
+	language={English}
+}
+
+@article{Nazar,
+author = {Nazar, Najam and M. J. Rakotomahefa, T},
+year = {2016},
+month = {08},
+pages = {313-322},
+title = {Analysis of a Small Company for Software Product Line Adoption — An Industrial Case Study},
+volume = {8},
+journal = {International Journal of Computer Theory and Engineering},
+doi = {10.7763/IJCTE.2016.V8.1064}
+}
+
+@article{KnauberPL4SME,
+	author = {Peter Knauber and Dirk Muthig and Klaus Schmid and Tanya Widen},
+	title = {Applying Product Line Concepts in Small and Medium-Sized Companies},
+	journal ={IEEE Software},
+	volume = {17},
+	number = {5},
+	issn = {0740-7459},
+	year = {2000},
+	pages = {88-95},
+	publisher = {IEEE Computer Society},
+	address = {Los Alamitos, CA, USA},
+}
+
+@article{dande2014software,
+	title={Software Startup Patterns-An Empirical Study},
+	author={Dande, Anuradha and Eloranta, Veli-Pekka and Kovalainen, Antti-Jussi and Lehtonen, Timo and Lepp{\"a}nen, Marko and Salmimaa, Taru and Sayeed, Mahbubul and Vuori, Matti and Rubattel, Claude and Weck, Wolfgang and others},
+	journal={Tampereen teknillinen yliopisto. Tietotekniikan laitos. Raportti-Tampere University of Technology. Department of Pervasive Computing. Report; 4},
+	year={2014}
+}
+
+@article{Coallier200573,
+	title = "A Product Line engineering practices model ",
+	journal = "Science of Computer Programming ",
+	volume = "57",
+	number = "1",
+	pages = "73 - 87",
+	year = "2005",
+	note = "System and Software Architectures3rd International Workshop on System/Software Architectures ",
+	issn = "0167-6423",
+	doi = "http://dx.doi.org/10.1016/j.scico.2004.10.006",
+	url = "http://www.sciencedirect.com/science/article/pii/S0167642304001923",
+	author = "François Coallier and Roger Champagne",
+	keywords = "Modeling",
+	keywords = "Product Lines",
+	keywords = "Software engineering",
+	keywords = "System analysis and design "
+}
+
+@article{GAROUSI2019101,
+title = {Guidelines for including grey literature and conducting multivocal literature reviews in software engineering},
+journal = {Information and Software Technology},
+volume = {106},
+pages = {101-121},
+year = {2019},
+issn = {0950-5849},
+doi = {https://doi.org/10.1016/j.infsof.2018.09.006},
+url = {https://www.sciencedirect.com/science/article/pii/S0950584918301939},
+author = {Vahid Garousi and Michael Felderer and Mika V. Mäntylä},
+keywords = {Multivocal literature review, Grey literature, Guidelines, Systematic literature review, Systematic mapping study, Literature study, Evidence-based software engineering},
+abstract = {Context
+A Multivocal Literature Review (MLR) is a form of a Systematic Literature Review (SLR) which includes the grey literature (e.g., blog posts, videos and white papers) in addition to the published (formal) literature (e.g., journal and conference papers). MLRs are useful for both researchers and practitioners since they provide summaries both the state-of-the art and –practice in a given area. MLRs are popular in other fields and have recently started to appear in software engineering (SE). As more MLR studies are conducted and reported, it is important to have a set of guidelines to ensure high quality of MLR processes and their results.
+Objective
+There are several guidelines to conduct SLR studies in SE. However, several phases of MLRs differ from those of traditional SLRs, for instance with respect to the search process and source quality assessment. Therefore, SLR guidelines are only partially useful for conducting MLR studies. Our goal in this paper is to present guidelines on how to conduct MLR studies in SE.
+Method
+To develop the MLR guidelines, we benefit from several inputs: (1) existing SLR guidelines in SE, (2), a literature survey of MLR guidelines and experience papers in other fields, and (3) our own experiences in conducting several MLRs in SE. We took the popular SLR guidelines of Kitchenham and Charters as the baseline and extended/adopted them to conduct MLR studies in SE. All derived guidelines are discussed in the context of an already-published MLR in SE as the running example.
+Results
+The resulting guidelines cover all phases of conducting and reporting MLRs in SE from the planning phase, over conducting the review to the final reporting of the review. In particular, we believe that incorporating and adopting a vast set of experience-based recommendations from MLR guidelines and experience papers in other fields have enabled us to propose a set of guidelines with solid foundations.
+Conclusion
+Having been developed on the basis of several types of experience and evidence, the provided MLR guidelines will support researchers to effectively and efficiently conduct new MLRs in any area of SE. The authors recommend the researchers to utilize these guidelines in their MLR studies and then share their lessons learned and experiences.}
+}
+
+@inproceedings{Wohlin2014/2601248.2601268,
+author = {Wohlin, Claes},
+title = {Guidelines for Snowballing in Systematic Literature Studies and a Replication in Software Engineering},
+year = {2014},
+isbn = {9781450324762},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2601248.2601268},
+doi = {10.1145/2601248.2601268},
+abstract = {Background: Systematic literature studies have become common in software engineering, and hence it is important to understand how to conduct them efficiently and reliably.Objective: This paper presents guidelines for conducting literature reviews using a snowballing approach, and they are illustrated and evaluated by replicating a published systematic literature review.Method: The guidelines are based on the experience from conducting several systematic literature reviews and experimenting with different approaches.Results: The guidelines for using snowballing as a way to search for relevant literature was successfully applied to a systematic literature review.Conclusions: It is concluded that using snowballing, as a first search strategy, may very well be a good alternative to the use of database searches.},
+booktitle = {Proceedings of the 18th International Conference on Evaluation and Assessment in Software Engineering},
+articleno = {38},
+numpages = {10},
+keywords = {snowball search, replication, snowballing, systematic literature review, systematic mapping studies},
+location = {London, England, United Kingdom},
+series = {EASE '14}
+}
+
+@inproceedings{Cico0JNM20,
+  author       = {Orges Cico and
+                  Renata Souza and
+                  Letizia Jaccheri and
+                  Anh Nguyen{-}Duc and
+                  Ivan Machado},
+  editor       = {Eriks Klotins and
+                  Krzysztof Wnuk},
+  title        = {Startups Transitioning from Early to Growth Phase - {A} Pilot Study
+                  of Technical Debt Perception},
+  booktitle    = {Software Business - 11th International Conference, {ICSOB} 2020, Karlskrona,
+                  Sweden, November 16-18, 2020, Proceedings},
+  series       = {Lecture Notes in Business Information Processing},
+  volume       = {407},
+  pages        = {102--117},
+  publisher    = {Springer},
+  year         = {2020},
+  url          = {https://doi.org/10.1007/978-3-030-67292-8\_8},
+  doi          = {10.1007/978-3-030-67292-8\_8},
+  timestamp    = {Tue, 30 Nov 2021 13:29:31 +0100},
+  biburl       = {https://dblp.org/rec/conf/icsob/Cico0JNM20.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@incollection{Capilla13LifeCycle,
+	year={2013},
+	booktitle={Systems and Software Variability Management},
+	editor={Capilla, Rafael and Bosch, Jan and Kang, Kyo-Chul},
+	title={Variability in the Software Product Line Life cycle},
+	publisher={Springer Berlin Heidelberg},
+	author={Kang, KyoC. and Lee, Hyesun and Lee, Jaejoon},
+	pages={119-137},
+	language={English}
+}
+
+@techreport{Kang1990,
+	added-at = {2007-09-25T21:44:52.000+0200},
+	author = {Kang, K. C. and Cohen, S. G. and Hess, J. A. and Novak, W. E. and Peterson, A. S.},
+	biburl = {http://www.bibsonomy.org/bibtex/21910de1c3156c3a5821385760069cc52/tommens},
+	description = {software evolution bibliography},
+	institution = {Carnegie-Mellon University Software Engineering Institute},
+	interhash = {7d9a7ab3a80077c31cfd2a83150d5b3f},
+	intrahash = {1910de1c3156c3a5821385760069cc52},
+	keywords = {analysis domain},
+	month = {November},
+	timestamp = {2007-09-25T21:45:23.000+0200},
+	title = {Feature-Oriented Domain Analysis (FODA) Feasibility Study},
+	year = 1990
+}
+
+@article{Schmid:2002,
+	author = {Schmid, Klaus and Verlage, Martin},
+	title = {The Economic Impact of Product Line Adoption and Evolution},
+	journal = {IEEE Softw.},
+	issue_date = {July 2002},
+	volume = {19},
+	number = {4},
+	month = jul,
+	year = {2002},
+	pages = {50--57},
+	numpages = {8},
+	acmid = {626427},
+	publisher = {IEEE Computer Society Press},
+	address = {Los Alamitos, CA, USA},
+	keywords = {Product line development, product line adoption, product line evolution, product line scoping techniques, product line adoption strategies, product line risk factors.},
+} 
+
+@INPROCEEDINGS{Demeyer99metrics,
+	author = {Serge Demeyer and Stéphane Ducasse},
+	title = {Metrics, Do They Really Help?},
+	booktitle = {In Proceedings of LMO’99 (Langages et Modèles à Objets},
+	year = {1999},
+	pages = {69--82},
+	publisher = {Hermes Science Publications}
+}
+
+@ARTICLE{Wong00quantifyingthe,
+	author = {W. Eric Wong and Swapna S. Gokhale and Joseph R. Horgan},
+	title = {Quantifying the Closeness between Program Components and Features},
+	journal = {Journal of Systems and Software},
+	year = {2000},
+	volume = {54},
+	pages = {2000}
+}
+@inproceedings{WaseemI16,
+  author    = {Muhammad Waseem and
+               Naveed Ikram},
+  title     = {Architecting Activities Evolution and Emergence in Agile Software
+               Development: An Empirical Investigation - Initial Research Proposal},
+  booktitle = {Agile Processes, in Software Engineering, and Extreme Programming
+               - 17th International Conference, {XP} 2016, Edinburgh, UK, May 24-27,
+               2016, Proceedings},
+  pages     = {326--332},
+  year      = {2016},
+  crossref  = {DBLP:conf/xpu/2016},
+  url       = {https://doi.org/10.1007/978-3-319-33515-5\_35},
+  doi       = {10.1007/978-3-319-33515-5\_35},
+  timestamp = {Tue, 26 Jun 2018 14:10:51 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/xpu/WaseemI16},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@techreport{NorthropSoftwareProduct2004,
+	title={Software Product Line Adoption Roadmap},
+	author={Linda Northrop},
+	year={2004},
+	number={CMU/SEI-2004-TR-022},
+	institution={Software Engineering Institute, Carnegie Mellon University},
+	address={Pittsburgh, PA},
+}
+
+@techreport{EstrinOvercomingBarriers2003,
+	title={Overcoming Barriers to Technology Adoption in Small Manufacturing Enterprises (SMEs)},
+	author={Len Estrin and John Foreman and Suzanne Garcia-Miller},
+	year={2003},
+	number={CMU/SEI-2003-TR-012},
+	institution={Software Engineering Institute, Carnegie Mellon University},
+	address={Pittsburgh, PA},
+}
+
+@INPROCEEDINGS{SEIadoption, 
+	author={Northrop, L.M. and Jones, L.G.}, 
+	booktitle={Software Product Line Conference (SPLC), 2011 15th International}, 
+	title={Introduction to Software Product Lines Adoption}, 
+	year={2011}, 
+	pages={359-359}, 
+	keywords={software engineering;adoption planning artifacts;roadmap;software product line adoption;Couplings;Educational institutions;Organizations;Production facilities;Software;Software engineering;Tutorials;Software Product Line Adoption;Software Product Line Adoption Planning;Software Product Lines}, 
+	doi={10.1109/SPLC.2011.31}, 
+	month={Aug},}
+
+@misc{Probe,
+	title = {Software Engineering Institute, Product Line Technical Probe},
+	howpublished = {\url{http://www.sei.cmu.edu/productlines/consulting/techprobe/}},
+	note = {Accessed: 2015-10-15}
+}
+
+@techreport{EstrinOvercomingBarriers2003,
+	title={Overcoming Barriers to Technology Adoption in Small Manufacturing Enterprises (SMEs)},
+	author={Len Estrin and John Foreman and Suzanne Garcia-Miller},
+	year={2003},
+	number={CMU/SEI-2003-TR-012},
+	institution={Software Engineering Institute, Carnegie Mellon University},
+	address={Pittsburgh, PA},
+}
+
+@inproceedings{Bagheri:2013Lightweight,
+	author = {Bagheri, Ebrahim and Ensan, Faezeh},
+	title = {Light-weight Software Product Lines for Small and Medium-sized Enterprises (SMEs)},
+	booktitle = {Proceedings of the 2013 Conference of the Center for Advanced Studies on Collaborative Research},
+	series = {CASCON '13},
+	year = {2013},
+	location = {Ontario, Canada},
+	pages = {311--324},
+	numpages = {14},
+	acmid = {2555556},
+	publisher = {IBM Corp.},
+	address = {Riverton, NJ, USA},
+}
+
+@article{Bastos:2017:SPLSMEs,
+ author = {Bastos, Jonatas Ferreira and da Mota Silveira Neto, Paulo Anselmo and OLeary, Pdraig and de Almeida, Eduardo Santana and de Lemos Meira, Silvio Romero},
+ title = {Software Product Lines Adoption in Small Organizations},
+ journal = {J. Syst. Softw.},
+ issue_date = {September 2017},
+ volume = {131},
+ number = {C},
+ month = sep,
+ year = {2017},
+ issn = {0164-1212},
+ pages = {112--128},
+ numpages = {17},
+ url = {https://doi.org/10.1016/j.jss.2017.05.052},
+ doi = {10.1016/j.jss.2017.05.052},
+ acmid = {3143912},
+ publisher = {Elsevier Science Inc.},
+ address = {New York, NY, USA},
+ keywords = {Adoption barriers, Case study, Mapping study, Multi-method approach, SPL adoption, Software product lines, Survey},
+} 
+
+@inproceedings{Bastos:2015:SPLadoptionCaseStudy,
+	author = {Bastos, Jonatas Ferreira and da Mota Silveira Neto, Paulo Anselmo and de Almeida, Eduardo Santana and de Lemos Meira, Silvio Romero},
+	title = {Software Product Lines Adoption: An Industrial Case Study (Keynote)},
+	booktitle = {Proceedings of the Third International Workshop on Conducting Empirical Studies in Industry},
+	series = {CESI '15},
+	year = {2015},
+	location = {Florence, Italy},
+	pages = {35--42},
+	numpages = {8},
+	acmid = {2819317},
+	publisher = {IEEE Press},
+	address = {Piscataway, NJ, USA},
+}
+
+
+@inproceedings{5yrs,
+	author = {Verlage, Martin and Kiesgen, Thomas},
+	title = {Five Years of Product Line Engineering in a Small Company},
+	booktitle = {Proceedings of the 27th International Conference on Software Engineering},
+	series = {ICSE '05},
+	year = {2005},
+	isbn = {1-58113-963-2},
+	location = {St. Louis, MO, USA},
+	pages = {534--543},
+	numpages = {10},
+	acmid = {1062551},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {SME, experience report, product line engineering, project management},
+}
+
+@inproceedings{StallingerNSK11Migrating,
+	author    = {Fritz Stallinger and
+	Robert Neumann and
+	Robert Schossleitner and
+	Stephan Kriener},
+	title     = {Migrating towards evolving software product lines: challenges of an
+	{SME} in a core customer-driven industrial systems engineering context},
+	booktitle = {Proceedings of the 2nd International Workshop on Product Line Approaches
+	in Software Engineering, {PLEASE} 2011, Waikiki, Honolulu, HI, USA,
+	May 22-23, 2011},
+	pages     = {20--24},
+	year      = {2011},
+	crossref  = {DBLP:conf/icse/2011please},
+	timestamp = {Tue, 11 Aug 2015 11:24:01 +0200},
+	biburl    = {http://dblp2.uni-trier.de/rec/bib/conf/icse/StallingerNSK11},
+	bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{Font:2015,
+	author = {Font, Jaime and Arcega, Lorena and Haugen, \Oystein and Cetina, Carlos},
+	title = {Building Software Product Lines from Conceptualized Model Patterns},
+	booktitle = {Proceedings of the 19th International Conference on Software Product Line},
+	series = {SPLC '15},
+	year = {2015},
+	isbn = {978-1-4503-3613-0},
+	location = {Nashville, Tennessee},
+	pages = {46--55},
+	numpages = {10},
+	acmid = {2791085},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {human-in-the-loop, model-based software product lines, reverse engineering, variability identification},
+}
+
+@ARTICLE{Giardino2014, 
+	author={C. Giardino and M. Unterkalmsteiner and N. Paternoster and T. Gorschek and P. Abrahamsson}, 
+	journal={IEEE Software}, 
+	title={What Do We Know about Software Development in Startups?}, 
+	year={2014}, 
+	volume={31}, 
+	number={5}, 
+	pages={28-32}, 
+	keywords={software development management;Dropbox;Facebook;Linkedin;Spotify;Supercell;WhatsApp;software development startup practices;Commercialization;Companies;Market research;Software development;Software engineering;software development;software engineering;startups;systematic mapping study}, 
+	doi={10.1109/MS.2014.129}, 
+	ISSN={0740-7459}, 
+	month={Sept},}
+
+@article{PaternosterMappingStudy,
+	author       = {Paternoster, Nicolo and Giardino, Carmine and Unterkalmsteiner, Michael and Gorschek, Tony and Abrahamsson, Pekka},
+	keyword      = {Software development,Startups,Systematic mapping study},
+	language     = {eng},
+	number       = {10},
+	pages        = {1200--1218},
+	publisher    = {Elsevier},
+	series       = {Information and Software Technology},
+	title        = {Software development in startup companies: A systematic mapping study},
+	volume       = {56},
+	year         = {2014},
+}
+
+@book{LeanStartup,
+	title = "The lean startup : how today's entrepreneurs use continuous innovation to create radically successful businesses",
+	author = "Ries, Erich",
+	publisher = "Crown Business",
+	address = "New York",
+	year = 2011
+}
+
+@article{Coleman:2007,
+	author = {Coleman, Gerry and O'Connor, Rory},
+	title = {Using Grounded Theory to Understand Software Process Improvement: A Study of Irish Software Product Companies},
+	journal = {Inf. Softw. Technol.},
+	issue_date = {June, 2007},
+	volume = {49},
+	number = {6},
+	month = jun,
+	year = {2007},
+	issn = {0950-5849},
+	pages = {654--667},
+	numpages = {14},
+	acmid = {1240484},
+	publisher = {Butterworth-Heinemann},
+	address = {Newton, MA, USA},
+	keywords = {Grounded theory, Qualitative research methods, Software engineering, Software process improvement},
+}
+
+@INPROCEEDINGS{CrowneWhyStartupsFail, 
+	author={Crowne, M.}, 
+	booktitle={Engineering Management Conference, 2002. IEMC '02. 2002 IEEE International}, 
+	title={Why software product startups fail and what to do about it. Evolution of software product development in startup companies}, 
+	year={2002}, 
+	pages={338-343 vol.1}, 
+	keywords={failure analysis;product development;software development management;company failure;critical product development issues;delivery failures;marketing failures;product development managers;sales failures;software product development;software product startups failure;Assembly;Computer architecture;Investments;Market opportunities;Marketing and sales;Product development;Recruitment;Scheduling;Software engineering;Testing}, 
+	month={},
+}
+
+@article{Bagheri11,
+	year={2011},
+	issn={0963-9314},
+	journal={Software Quality Journal},
+	volume={19},
+	number={3},
+	doi={10.1007/s11219-010-9127-2},
+	title={Assessing the maintainability of software product line feature models using structural metrics},
+	url={http://dx.doi.org/10.1007/s11219-010-9127-2},
+	publisher={Springer US},
+	keywords={Software product line; Feature model; Quality attributes; Maintainability; Structural complexity; Controlled experimentation; Software prediction model},
+	author={Bagheri, Ebrahim and Gasevic, Dragan},
+	pages={579-612},
+	language={English}
+}
+
+@article{Nobrega_acost,
+	title={A cost framework specification for software product lines scenarios},
+	author={N{\'o}brega, Jarley Palmeira and De Almeida, Eduardo Santana and Lemos, S{\'\i}lvio Romero},
+	journal={6th Workshop on Component--Based Development},
+	year={2006}
+}
+
+@INPROCEEDINGS{SplEconModels, 
+	author={Ali, M.S. and Babar, M.A. and Schmid, K.}, 
+	booktitle={Software Engineering and Advanced Applications, 2009. SEAA '09. 35th Euromicro Conference on}, 
+	title={A Comparative Survey of Economic Models for Software Product Lines}, 
+	year={2009}, 
+	pages={275-278}, 
+	keywords={software engineering;commonalities;comparative survey;economic models;software product lines;systematic reuse;Acoustical engineering;Application software;Appraisal;Cost function;Economic forecasting;Investments;Predictive models;Productivity;Profitability;Software engineering;Economic models;Software product lines}, 
+	ISSN={1089-6503}, 
+	month={Aug},
+}
+
+@article{NazarSmallCoSPL,
+	author={N. Nazar and T. M. J. Rakotomahefa}, 
+	title={Analysis of a Small Company for Software Product Line Adoption — An Industrial Case Study}, 
+	journal = {International Journal of Computer Theory and Engineering},
+	volume = {8},
+	number = {4}, 
+	pages={313-322}, 
+	year = {2016},
+}
+
+@INPROCEEDINGS{Transitioning, 
+	author={Kircher, M. and Schwanninger, C. and Groher, I.}, 
+	booktitle={Software Product Line Conference, 2006 10th International}, 
+	title={Transitioning to a software product family approach - challenges and best practices}, 
+	year={2006}, 
+	pages={9 pp.-171}, 
+	keywords={DP industry;software engineering;Siemens business groups;software development;software product family approach;Automation;Best practices;Communication industry;Companies;Computer architecture;Electrical engineering;Electrical products industry;Iris;Software systems;Time to market},
+}
+
+@Article{Martin+Hoffman2007,
+	Author	= "Ken Martin and Bill Hoffman",
+	Title		= "An Open Source Approach to Developing Software in a Small Organization",
+	Year		= 2007,
+	Month	= 01,
+	Abstract	= "Sales, profits, and success are the goals of any business, large or small. Many factors can influence success, but when software development is an important business constituent, the relationship between the software product's characteristics and business goals is strong. We don't always recognize this, of course, because most of us became engineers for nobler reasons than serving a business - the intellectual challenge, the free T-shirts, the 2 a.m. beer and pizza to celebrate unit tests that are finally passing. But ultimately we must allow the choices we make in software development to be influenced by business goals, or else risk business failure",
+	Volume	= "24",
+	Number	= "1",
+	Pages	= "54--7",
+	Publisher	= "IEEE Software",
+	Institution	= "Kitware Inc., Carrboro, NC, USA.",
+	Language	= en_US,
+}
+
+@article{doi:10.1002/sdr.255,
+author = {Hilmola, Olli-Pekka and Helo, Petri and Ojala, Lauri},
+title = {The value of product development lead time in software startup},
+journal = {System Dynamics Review},
+volume = {19},
+number = {1},
+pages = {75-82},
+doi = {10.1002/sdr.255},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/sdr.255},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/sdr.255},
+abstract = {Abstract This article uses system dynamics simulation to enhance current understanding of the effects of product development lead time improvement in situations where a software company itself is not able to finance its operations with its own cash flow. In these situations, capital markets will provide some rounds of financing for startup at the very beginning, but after a while the company itself should be able to enlarge its operations with its own operational cash flow. However, the delay in the product development process, as well as the decline of R\&D productivity within the final product markets, will have their effects. On the basis of the results of this article, it is suggested that the improvement of product development lead time is one of the most important parameters in the software startup environment. In some situations, not only will slightly improved lead time performance require fewer rounds of financing, but also expansion of the company's operations will become less troublesome. Copyright © 2003 John Wiley \& Sons, Ltd.},
+year = {2003}
+}
+
+@article{Coleman08,
+	author = {Gerry Coleman and Rory V. O'Connor},
+	title = {An investigation into software development process formation in software start‐ups},
+	journal = {Journal of Enterprise Information Management},
+	volume = {21},
+	number = {6},
+	pages = {633-648},
+	year = {2008},
+}
+
+@article{Boehm:2003,
+ author = {Boehm, Barry},
+ title = {Value-based Software Engineering},
+ journal = {SIGSOFT Softw. Eng. Notes},
+ issue_date = {March 2003},
+ volume = {28},
+ number = {2},
+ month = mar,
+ year = {2003},
+ issn = {0163-5948},
+ pages = {4--},
+ url = {http://doi.acm.org/10.1145/638750.638776},
+ doi = {10.1145/638750.638776},
+ acmid = {638776},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@INPROCEEDINGS{Co-evolution, 
+	author={Heitlager, I. and Helms, R. and Brinkkemper, S.}, 
+	booktitle={Software Evolvability, 2007 Third International IEEE Workshop on}, 
+	title={A Tentative Technique for the Study and Planning of Co-Evolution in Product Software Start-ups}, 
+	year={2007}, 
+	pages={42-47}, 
+	keywords={software development management;software process improvement;software reliability;product software production;product software startups co-evolution;software portability;software process;software reliability;Companies;Conferences;Contracts;ISO standards;Production planning;Programming;Software quality;Software tools;Uncertainty;Visualization}, 
+	month={Oct},}
+
+@inproceedings{TransitPL2013,
+	author = {Kalender, Mert Emin and T\"{u}z\"{u}n, Eray and Tekinerdogan, Bedir},
+	title = {Decision Support for Adopting SPLE with Transit-PL},
+	booktitle = {Proceedings of the 17th International Software Product Line Conference Co-located Workshops},
+	series = {SPLC '13 Workshops},
+	year = {2013},
+	isbn = {978-1-4503-2325-3},
+	location = {Tokyo, Japan},
+	pages = {150--153},
+	numpages = {4},
+	acmid = {2499783},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {decision support systems, software product line engineering},
+} 
+
+@article{EvalDSM,
+	title = "Empirical evaluation of a decision support model for adopting software product line engineering ",
+	journal = "Information and Software Technology ",
+	volume = "60",
+	number = "",
+	pages = "77 - 101",
+	year = "2015",
+	note = "",
+	issn = "0950-5849",
+	author = "Eray Tüzün and Bedir Tekinerdogan and Mert Emin Kalender and Semih Bilgen",
+}

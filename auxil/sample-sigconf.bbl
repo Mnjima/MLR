@@ -1,0 +1,191 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{9}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{{Besker}, {Martini}, {Edirisooriya Lokuge},
+  {Blincoe}, and {Bosch}}{{Besker} et~al\mbox{.}}{2018}]%
+        {Besker2018}
+\bibfield{author}{\bibinfo{person}{T. {Besker}}, \bibinfo{person}{A.
+  {Martini}}, \bibinfo{person}{R. {Edirisooriya Lokuge}}, \bibinfo{person}{K.
+  {Blincoe}}, {and} \bibinfo{person}{J. {Bosch}}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Embracing Technical Debt, from a Startup Company
+  Perspective}. In \bibinfo{booktitle}{\emph{2018 IEEE International Conference
+  on Software Maintenance and Evolution (ICSME)}}. \bibinfo{pages}{415--425}.
+\newblock
+\showISSN{2576-3148}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICSME.2018.00051}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kitchenham and Brereton}{Kitchenham and
+  Brereton}{2013}]%
+        {KITCHENHAM20132049}
+\bibfield{author}{\bibinfo{person}{Barbara Kitchenham} {and}
+  \bibinfo{person}{Pearl Brereton}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{A systematic review of systematic review process
+  research in software engineering}.
+\newblock \bibinfo{journal}{\emph{Information and Software Technology}}
+  \bibinfo{volume}{55}, \bibinfo{number}{12} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{2049--2075}.
+\newblock
+\showISSN{0950-5849}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.infsof.2013.07.010}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kitchenham, Charters,
+  et~al\mbox{.}}{Kitchenham et~al\mbox{.}}{2007}]%
+        {kitchenham2007guidelines}
+\bibfield{author}{\bibinfo{person}{Barbara Kitchenham}, \bibinfo{person}{Stuart
+  Charters}, {et~al\mbox{.}}} \bibinfo{year}{2007}\natexlab{}.
+\newblock \bibinfo{title}{Guidelines for performing systematic literature
+  reviews in software engineering}.
+\newblock
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li, Avgeriou, and Liang}{Li
+  et~al\mbox{.}}{2015}]%
+        {Li:2015}
+\bibfield{author}{\bibinfo{person}{Zengyang Li}, \bibinfo{person}{Paris
+  Avgeriou}, {and} \bibinfo{person}{Peng Liang}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{A Systematic Mapping Study on Technical Debt and
+  Its Management}.
+\newblock \bibinfo{journal}{\emph{J. Syst. Softw.}} \bibinfo{volume}{101},
+  \bibinfo{number}{C} (\bibinfo{date}{March} \bibinfo{year}{2015}),
+  \bibinfo{pages}{193--220}.
+\newblock
+\showISSN{0164-1212}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.jss.2014.12.027}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Maldonado and Shihab}{Maldonado and
+  Shihab}{2015}]%
+        {Maldonado7332619}
+\bibfield{author}{\bibinfo{person}{Everton da~S. Maldonado} {and}
+  \bibinfo{person}{Emad Shihab}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Detecting and quantifying different types of
+  self-admitted technical Debt}. In \bibinfo{booktitle}{\emph{2015 IEEE 7th
+  International Workshop on Managing Technical Debt (MTD)}}.
+  \bibinfo{pages}{9--15}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/MTD.2015.7332619}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Seaman, Guo, Zazworka, Shull, Izurieta, Cai,
+  and Vetrò}{Seaman et~al\mbox{.}}{2012}]%
+        {Seaman6225999}
+\bibfield{author}{\bibinfo{person}{Carolyn Seaman}, \bibinfo{person}{Yuepu
+  Guo}, \bibinfo{person}{Nico Zazworka}, \bibinfo{person}{Forrest Shull},
+  \bibinfo{person}{Clemente Izurieta}, \bibinfo{person}{Yuanfang Cai}, {and}
+  \bibinfo{person}{Antonio Vetrò}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Using technical debt data in decision making:
+  Potential decision approaches}. In \bibinfo{booktitle}{\emph{2012 Third
+  International Workshop on Managing Technical Debt (MTD)}}.
+  \bibinfo{pages}{45--48}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/MTD.2012.6225999}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Sutton}{Sutton}{2000}]%
+        {Sutton854066}
+\bibfield{author}{\bibinfo{person}{S.M. Sutton}.}
+  \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{The role of process in software start-up}.
+\newblock \bibinfo{journal}{\emph{IEEE Software}} \bibinfo{volume}{17},
+  \bibinfo{number}{4} (\bibinfo{year}{2000}), \bibinfo{pages}{33--39}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/52.854066}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Unterkalmsteiner, Abrahamsson, Wang,
+  Nguyen{-}Duc, Shah, Bajwa, Baltes, Conboy, Cullina, Dennehy, Edison,
+  Fern{\'{a}}ndez{-}S{\'{a}}nchez, Garbajosa, Gorschek, Klotins, Hokkanen, Kon,
+  Lunesu, Marchesi, Morgan, Oivo, Selig, Sepp{\"{a}}nen, Sweetman,
+  Tyrv{\"{a}}inen, Ungerer, and Yag{\"{u}}e}{Unterkalmsteiner
+  et~al\mbox{.}}{2016}]%
+        {Unterkalmsteiner16}
+\bibfield{author}{\bibinfo{person}{Michael Unterkalmsteiner},
+  \bibinfo{person}{Pekka Abrahamsson}, \bibinfo{person}{Xiaofeng Wang},
+  \bibinfo{person}{Anh Nguyen{-}Duc}, \bibinfo{person}{Syed M.~Ali Shah},
+  \bibinfo{person}{Sohaib~Shahid Bajwa}, \bibinfo{person}{Guido~H. Baltes},
+  \bibinfo{person}{Kieran Conboy}, \bibinfo{person}{Eoin Cullina},
+  \bibinfo{person}{Denis Dennehy}, \bibinfo{person}{Henry Edison},
+  \bibinfo{person}{Carlos Fern{\'{a}}ndez{-}S{\'{a}}nchez},
+  \bibinfo{person}{Juan Garbajosa}, \bibinfo{person}{Tony Gorschek},
+  \bibinfo{person}{Eriks Klotins}, \bibinfo{person}{Laura Hokkanen},
+  \bibinfo{person}{Fabio Kon}, \bibinfo{person}{Ilaria Lunesu},
+  \bibinfo{person}{Michele Marchesi}, \bibinfo{person}{Lorraine Morgan},
+  \bibinfo{person}{Markku Oivo}, \bibinfo{person}{Christoph Selig},
+  \bibinfo{person}{Pertti Sepp{\"{a}}nen}, \bibinfo{person}{Roger Sweetman},
+  \bibinfo{person}{Pasi Tyrv{\"{a}}inen}, \bibinfo{person}{Christina Ungerer},
+  {and} \bibinfo{person}{Agust{\'{\i}}n Yag{\"{u}}e}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Software Startups - {A} Research Agenda}.
+\newblock \bibinfo{journal}{\emph{e-Informatica}} \bibinfo{volume}{10},
+  \bibinfo{number}{1} (\bibinfo{year}{2016}), \bibinfo{pages}{89--124}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.5277/e-Inf160105}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wohlin}{Wohlin}{2014}]%
+        {wohlin2014guidelines}
+\bibfield{author}{\bibinfo{person}{Claes Wohlin}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Guidelines for snowballing in systematic literature
+  studies and a replication in software engineering}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 18th international conference on
+  evaluation and assessment in software engineering}}. \bibinfo{pages}{1--10}.
+\newblock
+
+
+\end{thebibliography}

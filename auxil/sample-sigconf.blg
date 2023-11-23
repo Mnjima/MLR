@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: sample-sigconf.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+The style file: ACM-Reference-Format.bst
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: sample-base.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--empty publisher in Besker2018
+Warning--empty address in Besker2018
+Warning--empty publisher in Maldonado7332619
+Warning--empty address in Maldonado7332619
+Warning--empty publisher in Seaman6225999
+Warning--empty address in Seaman6225999
+Warning--empty publisher in wohlin2014guidelines
+Warning--empty address in wohlin2014guidelines
+You've used 9 entries,
+            5719 wiz_defined-function locations,
+            1526 strings with 19175 characters,
+and the built_in function-call counts, 12677 in all, are:
+= -- 1512
+> -- 651
+< -- 0
++ -- 227
+- -- 238
+* -- 1012
+:= -- 1405
+add.period$ -- 45
+call.type$ -- 9
+change.case$ -- 86
+chr.to.int$ -- 9
+cite$ -- 17
+duplicate$ -- 969
+empty$ -- 677
+format.name$ -- 256
+if$ -- 2942
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 36
+newline$ -- 132
+num.names$ -- 72
+pop$ -- 371
+preamble$ -- 1
+purify$ -- 167
+quote$ -- 0
+skip$ -- 347
+stack$ -- 0
+substring$ -- 868
+swap$ -- 101
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 214
+warning$ -- 8
+while$ -- 72
+width$ -- 0
+write$ -- 211
+(There were 8 warnings)

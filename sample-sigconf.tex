@@ -1,0 +1,251 @@
+%%%% Proceedings format for most of ACM conferences (with the exceptions listed below) and all ICPS volumes.
+
+
+%\documentclass[sigconf]{acmart}
+%%%% As of March 2017, [siggraph] is no longer used. Please use sigconf (above) for SIGGRAPH conferences.
+
+\documentclass[manuscript]{acmart}
+
+
+%%%% Proceedings format for SIGPLAN conferences 
+% \documentclass[sigplan, anonymous, review]{acmart}
+
+%%%% Proceedings format for SIGCHI conferences
+% \documentclass[sigchi, review]{acmart}
+
+%%%% To use the SIGCHI extended abstract template, please visit
+% https://www.overleaf.com/read/zzzfqvkmrfzn
+
+%
+% defining the \BibTeX command - from Oren Patashnik's original BibTeX documentation.
+%\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\usepackage{booktabs} % For formal tables
+%\usepackage{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{dblfloatfix}
+\usepackage{tabularx}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\usepackage{xcolor}% Add more colours
+\usepackage{fancybox}%Provides variants of \fbox
+\usepackage{balance}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% -- Conditional compilation settings
+\usepackage{ifthen}
+\newboolean{includecomments}
+\setboolean{includecomments}{true}
+%%%% --- End of conditional compilation settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amssymb} %adds special symbol names used for \TOFIX commands etc
+\usepackage{xcolor}
+\usepackage{hhline}
+%\nb - keyword - color - comment
+\ifthenelse{\boolean{includecomments}} {
+    \newcommand{\nb}[3]{
+    	{\colorbox{#2}{\bfseries\sffamily\scriptsize\textcolor{white}{#1}}}
+    	{\textcolor{#2}{\sf\small$\blacktriangleright$\textit{#3}$\blacktriangleleft$}}}
+} {
+    \newcommand{\nb}[3]{}
+}
+
+\newcommand{\serge}[1]{\nb{Serge: }{blue}{[#1]}}
+\newcommand{\mercy}[1]{\nb{Mercy: }{purple}{[#1]}}
+\newcommand{\todo}[1]{\nb{TODO: }{orange}{[#1]}}
+\newcommand{\tofix}[1]{\nb{TO FIX:}{red}{[#1]}}
+
+\newcommand{\hypobox}[1]{
+	\begin{center}%
+        \noindent\thicklines\setlength{\fboxsep}{2pt}%
+        \cornersize{0.1}
+        \ovalbox{\begin{minipage}{8.4cm}%
+		#1
+		\end{minipage}}
+	\end{center}}
+    
+% Rights management information. 
+% This information is sent to you when you complete the rights form.
+% These commands have SAMPLE values in them; it is your responsibility as an author to replace
+% the commands and values with those provided to you when you complete the rights form.
+%
+% These commands are for a PROCEEDINGS abstract or paper.
+
+
+%
+% These commands are for a JOURNAL article.
+%\setcopyright{acmcopyright}
+%\acmJournal{TOG}
+%\acmYear{2018}\acmVolume{37}\acmNumber{4}\acmArticle{111}\acmMonth{8}
+%\acmDOI{10.1145/1122445.1122456}
+
+%
+% Submission ID. 
+% Use this when submitting an article to a sponsored event. You'll receive a unique submission ID from the organizers
+% of the event, and this ID should be used as the parameter to this command.
+%\acmSubmissionID{123-A56-BU3}
+
+%
+% The majority of ACM publications use numbered citations and references. If you are preparing content for an event
+% sponsored by ACM SIGGRAPH, you must use the "author year" style of citations and references. Uncommenting
+% the next command will enable that style.
+%\citestyle{acmauthoryear}
+
+%
+% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%
+% The "title" command has an optional parameter, allowing the author to define a "short title" to be used in page headers.
+%\title{Balancing Speed vs Quality - A Multivocal Literature Review on Technical Debt Management in Startups}
+\title{A Multivocal Literature Review on Technical Debt in Startups}
+%
+% The "author" command and its associated commands are used to define the authors and their affiliations.
+% Of note is the shared affiliation of the first two authors, and the "authornote" and "authornotemark" commands
+% used to denote shared contribution to the research.
+\author{Mercy Njima}
+\orcid{1234-5678-9012-3456}
+\affiliation{
+	\institution{University of Antwerp}
+	%\streetaddress{104 Jamestown Rd}
+	\city{Antwerp}
+	%\state{VA}
+	%\postcode{23185}
+	\country{Belgium}}
+\email{mercy.njima@uantwerpen.be}
+
+\author{Serge Demeyer}
+\orcid{1234-5678-9012-3456}
+\affiliation{
+	\institution{University of Antwerp and Flanders Make}
+	%\streetaddress{104 Jamestown Rd}
+	\city{Antwerp}
+	%\state{VA}
+	%\postcode{23185}
+	\country{Belgium}}
+\email{serge.demeyer@uantwerpen.be}
+
+%
+% By default, the full list of authors will be used in the page headers. Often, this list is too long, and will overlap
+% other information printed in the page headers. This command allows the author to define a more concise list
+% of authors' names for this purpose.
+%\renewcommand{\shortauthors}{M. Njima, S. Demeyer}
+
+%
+% The abstract is a short summary of the work to be presented in the article.
+\begin{abstract}
+ Startups often operate under limited resources and time, and may intentionally accumulate technical debt to meet immediate market needs.
+ However, this intentional accumulation requires careful management to avoid long-term negative consequences for the startup.
+ We conducted a Multivocal Literature Review of the existing body of knowledge in order to understand the state of the art and the practice
+ of technical debt in startups and its implications. The key outcome of this study is the creation of a framework that provides a
+ comprehensive view of technical debt in startups including it's dimensions and attributes as well as a taxonomy that describes the
+ different forms it takes and directions for future work.
+\end{abstract}
+%
+% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+% Please copy and paste the code instead of the example below.
+%
+
+\maketitle
+
+\section{Introduction}
+In software development, technical debt is a term that is used to describe the compromises that allow a team to deliver a project quickly at the cost of increased maintenance in the future ~\cite{Maldonado7332619}. These compromises create software "debt" that must be repaid in the future to  avoid "interest" in the form of reduced maintainability and evolution ~\cite{Seaman6225999}. Most research on technical debt has been focused on mature software teams say in large organizations who may have less pressure and, therefore, reason about technical debt very differently than software startups ~\cite{Besker2018,Li:2015}.
+
+Startups are organizations that create scalable, high-tech innovative products and services under conditions of extreme uncertainty, limited resources, multiple influences, new technologies, and evolving markets~\cite{Unterkalmsteiner16,Sutton854066}. Startups often operate under resource constraints and time pressure, have inexperienced developers, lack a defined development process, and lack autonomy of decision-making, which lead to the intentional or unintentional accumulation of technical debt ~\cite{Besker2018}.The situation is further exacerbated by the need for rapid product development and iteration to gain a competitive advantage in the market ~\cite{Cico0JNM20}.
+
+While technical debt is as important to software startups as it is to mature companies, the kind of decisions to be made and the consequences of making the wrong decisions are not the same, justifying further research on technical debt in software startups ~\cite{Unterkalmsteiner16}. In the recent past, there has been a few research efforts to investigate the technical debt phenomenon in startups. However, no structured investigation of the area has been performed and none of the systematic literature reviews or mapping studies on technical debt address technical debt in startups. The goal of this work is to identify and understand the main contributions of the state-of-art and practice of technical debt in startups. Given the industry-oriented nature of startups and the limited number of formally-published literature in this area, we conducted a Multivocal Literature Review (MLR) ~\cite{GAROUSI2019101}. We chose this method because a significant amount of information related to the research topic is available in grey literature, including technical reports, blogs, and standards that are not typically published in academic sources. MLRs recognize the need for grey literature rather than constructing evidence from only the knowledge reported in academic settings.
+This work was conducted with the goal of answering the following research questions:
+\begin{enumerate}
+\item What is the current state-of-the-art research and practice of technical debt in startups including activities, approaches, and tools?
+\item {What factors influence the accumulation and management of technical debt in software startups?}
+\item {What are the challenges and benefits of technical debt for software startups?}
+\item {How do startups manage technical debt and when does that become a priority?}
+\item What are the reported mitigating strategies of technical debt in startups?
+\item What are the possible future directions of technical debt research and practice in startups?
+\end{enumerate}
+
+The rest of this paper is structured as follows: The design of our investigation is explained in Section 2. Section 3 discusses the findings and Section 4 presents a discussion of the findings. We present the conclusion and examine threats to validity in Section 5. Finally, Section 6 presents future work.
+
+\section{Research Design}
+In this section, we outline the Multivocal Literature Review (MLR) technique we adopted in this work. We followed the established procedures and guidelines defined by Garousi et al. ~\cite{GAROUSI2019101}.
+
+\subsection{Motivation}
+The purpose of this MLR is to provide a comprehensive and inclusive understanding of technical debt in startups by incorporating a wide range of sources and perspectives from both published and non-published literature ~\cite{Ogawa91, Garousi2016/2915970.2916008}. It is a form of Systematic Literature Review (SLR) that includes grey literature such as blog posts, videos, and white papers, in addition to the formal literature like journal and conference papers. This approach is particularly valuable in software engineering in startups, where it is essential to capture both the "state of the practice" and research and therefore, provide a more holistic view of the field ~\cite{Garousi2016/2915970.2916008}.
+
+The MLR process is illustrated in Fig. \ref{fig:MLRprocess}. It consists of three phases: planning, conducting and reporting. We discuss each phase in the rest of this section. This MLR search was conducted in October 2023 and the analysis and reporting was completed in December 2023.
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{MLRprocess.jpg}
+  \caption{Multivocal literature review (MLR) steps adopted in this research ....(Work in Progress)}
+  %\Description{}
+  \label{fig:MLRprocess}
+\end{figure}
+
+\subsection{Conducting the MLR}
+The MLR search was conducted in three stages.
+\begin{enumerate}
+\item Data sources and search strategy: For the formal literature, we selected the list of relevant bibliographic sources following the suggestions of ~\cite{kitchenham2007guidelines}, since these sources are
+recognized as the most representative in the software engineering domain. The list includes: ACM Digital Library,
+IEEEXplore Digital Library, Science Direct, Scopus, Google Scholar, CiteSeer library, Inspec, Springer link. Thereafter, we applied the snowballing method in order not to miss any potentially relevant publications as ouutlined in ~\cite{Wohlin2014/2601248.2601268}.
+On the other hand, we used Google's web search engine (http://www.google.com) to source for the grey literature.
+A preliminary search helped to narrow down the keywords for a suitable search query. We used the terms "technical debt" AND "startup" for both the formal and the grey literature searches.
+\item Inclusion and exclusion criteria: The results were reviewed against a set of inclusion and exclusion criteria. Search results were included if (a) the main objective of the result which may be a primary or secondary  study was either to discuss or investigate technical debt in startups. This inclusion criterion defines the basic scope of our study.
+(b) must have a software engineering context. To keep our study to manageable levels, the scope of our study was restricted to SE related papers.
+Search results were excluded if they were (a) a duplicated record (b) only mention technical debt in an introductory manner and do not fully or partly focus on its occurrence in startup context.
+\item Quality assessment: We adopted the quality assessment checklist of grey literature from Garousi et al ~\cite{GAROUSI2019101}.
+
+
+\end{enumerate}
+\section{Findings and Discussion}
+
+\subsection{State of the art}
+- Publication trend
+
+\subsection{Demographics}
+- Classification / types of literature
+
+\subsection{Technical Debt Management Activities}
+The technical debt management process includes activities used to control and reduce the technical debt in a software project. Table \ref{tab:TDMactivities} present the various technical debt management activities and the corresponding reference to the work that presents them.
+
+\begin{table}[h!]
+    \caption{Technical Debt Management Activities and the works that report on them}
+  \label{tab:TDMactivities}
+\centering
+\begin{tabular}{|c|c|c|}
+    \hline
+    TDM Activity & White Literature & Grey Literature \\ \hline
+    TD Repayment &  &  \\ \hline
+    TD Identification & ~\cite{Klotins2018/3183519.3183539} & \\ \hline
+    TD Measurement & & \\ \hline
+    TD monitoring & ~\cite{Besker2018} & \\ \hline
+ TD prioritization & & \\ \hline
+TD communication & & ~\cite{FowlerBottlenecks} \\ \hline
+TD prevention & ~\cite{SanchezGordon2016}& \\ \hline
+TD representation/documentation & & \\ \hline
+    \end{tabular}
+\end{table}
+
+\section{Challenges and Future Directions}
+
+
+\section{Conclusion}
+
+
+
+
+\balance
+%
+% The next two lines define the bibliography style to be used, and the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+% 
+% If your work has an appendix, this is the place to put it.
+%\appendix
+
+
+\end{document}
+
+
+\keywords{Start-ups, Technical Debt}
