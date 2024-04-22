@@ -7,7 +7,7 @@
 \documentclass[manuscript]{acmart}
 
 \usepackage{url}
-\usepackage[round]{natbib}
+%\usepackage[round]{natbib}
 %\usepackage[natbib, style=authoryear, backend=bibtex]{biblatex}
 \usepackage{tikz}
 \usetikzlibrary{mindmap}
@@ -44,7 +44,7 @@
 %%%% --- End of conditional compilation settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{amssymb} %adds special symbol names used for \TOFIX commands etc
+%\usepackage{amssymb} %adds special symbol names used for \TOFIX commands etc
 \usepackage{xcolor}
 \usepackage{hhline}
 %\nb - keyword - color - comment
@@ -230,7 +230,7 @@ A growing body of research has shed light on the intricacies of technical debt i
 
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{PublicationTrend.jpg}
+%  \includegraphics[width=\textwidth]{PublicationTrend.jpg}
   \caption{Publication Trend over the years}
   %\Description{}
  \label{fig:Trend}
@@ -239,7 +239,7 @@ A growing body of research has shed light on the intricacies of technical debt i
 Figure \ref{fig:Sources} shows the categories of our primary sources. The highest number of resources we cited came from web blogs and the second highest number of resources were presented at conferences. This clearly shows high practitioners’ interest in the topic under study. 
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{TypeSources.jpg}
+%  \includegraphics[width=\textwidth]{TypeSources.jpg}
   \caption{Types of Primary Sources}
   %\Description{}
  \label{fig:Sources}
@@ -279,12 +279,12 @@ Moreover, troubleshooting issues or fixing bugs becomes more difficult without p
 People Debt refers to the negative consequences of neglecting employee well-being, knowledge transfer, and building a strong company culture in the early stages of a startup ~\cite{Blog21:online}. 
 
 
-\begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=grey!40, 
+\begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=gray, 
 	level 1/.append style={level distance=5cm,sibling angle=90},
 	level 2/.append style={level distance=3cm,sibling angle=45},]
 
 \node{Startup Technical Debt Taxonomy}
-child [concept color=grey!40] {node {Type}
+child [concept color=gray] {node {Type}
 	child { node {Code}}
 	child { node {Architecture, Design ~\cite{Qualityv77:online}}}
 	%child { node {Infrastructure}}
@@ -293,21 +293,21 @@ child [concept color=grey!40] {node {Type}
 	child { node {People}}
 	%child { node {}}
 }
-child [concept color=grey!40] { node {Classification}
+child [concept color=gray] { node {Classification}
 	child { node {Intentional}}
 	child { node {Non-intentional}}
 	child { node {Prudent}}
 	child { node {Reckless}}
 	%child { node {}}
 }
-child [concept color=grey!40] { node {Impact}
+child [concept color=gray] { node {Impact}
 	child { node {Strategic}}
 	child { node {Financial}}
 	child { node {Operational}}
 	child { node {Product Quality}}
 	%child { node {}}
 }
-child [concept color=grey!40] { node {Mitigation}
+child [concept color=gray] { node {Mitigation}
 	child { node {Refactoring}}
 	child { node {Automated Testing}}
 	child { node {Continuous Integration}}
@@ -421,8 +421,9 @@ Continued exploration will pave the way for more adaptable and effective strateg
 \balance
 %
 % The next two lines define the bibliography style to be used, and the bibliography file.
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{sample-base}
+%\bibliographystyle{ACM-Reference-Format}
+\bibliographystyle{plain}
+\bibliography{Njima2024LiteratureSurveyBis}
 %\nocite{*}
 
 % 
