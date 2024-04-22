@@ -1,8 +1,322 @@
-\begin{thebibliography}{0}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{10}
+
+\bibitem{1NewMess49:online}
+3 methods for startups to reduce technical debt.
+\newblock \url{https://www.usertesting.com/blog/reduce-technical-debt}, 2020.
+\newblock (Accessed on 12/11/2023).
+
+\bibitem{TheImpac54:online}
+The impact of technical debt on early-stage startups: Insights into app
+  development.
+\newblock
+  \url{https://www.masslight.com/posts/impact-technical-debt-early-stage-startups-insights-app-development},
+  2021.
+\newblock (Accessed on 12/11/2023).
+
+\bibitem{The3Best94:online}
+The 3 best tactics to prevent technical debt.
+\newblock
+  \url{https://stepsize.com/blog/3-best-tactics-to-prevent-technical-debt},
+  2022.
+\newblock (Accessed on 12/11/2023).
+
+\bibitem{Acknowle63:online}
+Acknowledging and addressing technical debt in startups and scale-ups |
+  thoughtworks.
+\newblock
+  \url{https://www.thoughtworks.com/insights/podcasts/technology-podcasts/acknowledging-addressing-technical-debt-startups-scale-ups#Transcript},
+  2022.
+\newblock (Accessed on 12/11/2023).
+
+\bibitem{Howtohan98:online}
+How to handle early startup technical debt (or just avoid it entirely).
+\newblock \url{https://www.cockroachlabs.com/blog/startup-technical-debt/},
+  2022.
+\newblock (Accessed on 12/11/2023).
+
+\bibitem{TheTop5S17:online}
+Amanda Beaty.
+\newblock The top 5 scale-up mistakes for startups with dave kellogg, balderton
+  capital executive-in-residence (pod 574 + video) | saastr.
+\newblock
+  \url{https://www.saastr.com/the-top-5-scale-up-mistakes-for-startups-with-balderton-capital-executive-in-residence-dave-kellogg-pod-574-video/},
+  2022.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{Besker2018}
+T.~{Besker}, A.~{Martini}, R.~{Edirisooriya Lokuge}, K.~{Blincoe}, and
+  J.~{Bosch}.
+\newblock Embracing technical debt, from a startup company perspective.
+\newblock In {\em 2018 IEEE International Conference on Software Maintenance
+  and Evolution (ICSME)}, pages 415--425, Sep. 2018.
+
+\bibitem{Chicote:2017}
+Marcos Chicote.
+\newblock Startups and technical debt: Managing technical debt with visual
+  thinking.
+\newblock In {\em Proceedings of the 1st International Workshop on Software
+  Engineering for Startups}, SoftStart '17, pages 10--11, Piscataway, NJ, USA,
+  2017. IEEE Press.
+
+\bibitem{CicoTradeoffs}
+Orges Cico.
+\newblock Technical debt trade-off -experiences from software startups becoming
+  grownups.
+\newblock 11 2019.
+
+\bibitem{Cico0JNM20}
+Orges Cico, Renata Souza, Letizia Jaccheri, Anh Nguyen{-}Duc, and Ivan Machado.
+\newblock Startups transitioning from early to growth phase - {A} pilot study
+  of technical debt perception.
+\newblock In Eriks Klotins and Krzysztof Wnuk, editors, {\em Software Business
+  - 11th International Conference, {ICSOB} 2020, Karlskrona, Sweden, November
+  16-18, 2020, Proceedings}, volume 407 of {\em Lecture Notes in Business
+  Information Processing}, pages 102--117. Springer, 2020.
+
+\bibitem{FowlerBottlenecks}
+Tim Cochran and Carl Nygard.
+\newblock Bottleneck \#01: Tech debt.
+\newblock
+  \url{https://martinfowler.com/articles/bottlenecks-of-scaleups/01-tech-debt.html},
+  2022.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{CrowneWhyStartupsFail}
+M.~Crowne.
+\newblock Why software product startups fail and what to do about it. evolution
+  of software product development in startup companies.
+\newblock In {\em Engineering Management Conference, 2002. IEMC '02. 2002 IEEE
+  International}, pages 338--343 vol.1, 2002.
+
+\bibitem{9820390}
+Filipe~Tabosa Da~Silva, Ewertton Oliveira~Silva De~Souza, Rodrigo~Rebouças
+  De~Almeida, and Wylliams~Barbosa Santos.
+\newblock Business-driven technical debt prioritization: A replication study.
+\newblock In {\em 2022 17th Iberian Conference on Information Systems and
+  Technologies (CISTI)}, pages 1--6, 2022.
+
+\bibitem{10.1145/3084226.3084248}
+Anh~Nguyen Duc and Pekka Abrahamsson.
+\newblock Exploring the outsourcing relationship in software startups: A
+  multiple case study.
+\newblock In {\em Proceedings of the 21st International Conference on
+  Evaluation and Assessment in Software Engineering}, EASE '17, page 134–143,
+  New York, NY, USA, 2017. Association for Computing Machinery.
+
+\bibitem{DYBA2008833}
+Tore Dybå and Torgeir Dingsøyr.
+\newblock Empirical studies of agile software development: A systematic review.
+\newblock {\em Information and Software Technology}, 50(9):833--859, 2008.
+
+\bibitem{10043622}
+George Fairbanks.
+\newblock Fix tech debt with virtuous cycles.
+\newblock {\em IEEE Software}, 40(2):111--116, 2023.
+
+\bibitem{Startups4:online}
+Milena Ferraz.
+\newblock Startups and design debts | labcodes.
+\newblock
+  \url{https://labcodes.com.br/blog/en-us/design/startups-and-design-debts-who-pays-bill/},
+  2022.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{DesignSt86:online}
+Martin Fowler.
+\newblock Design stamina hypothesis.
+\newblock \url{https://martinfowler.com/bliki/DesignStaminaHypothesis.html},
+  2007.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{Garousi2016/2915970.2916008}
+Vahid Garousi, Michael Felderer, and Mika~V. M\"{a}ntyl\"{a}.
+\newblock The need for multivocal literature reviews in software engineering:
+  Complementing systematic literature reviews with grey literature.
+\newblock In {\em Proceedings of the 20th International Conference on
+  Evaluation and Assessment in Software Engineering}, EASE '16, New York, NY,
+  USA, 2016. Association for Computing Machinery.
+
+\bibitem{GAROUSI2019101}
+Vahid Garousi, Michael Felderer, and Mika~V. Mäntylä.
+\newblock Guidelines for including grey literature and conducting multivocal
+  literature reviews in software engineering.
+\newblock {\em Information and Software Technology}, 106:101--121, 2019.
+
+\bibitem{10.1145/3387906.3388623}
+Fran\c{c}ois Gauthier, Alexander Jordan, Padmanabhan Krishnan, Behnaz
+  Hassanshahi, J\"{o}rn~Guy S\"{u}\ss{}, Sora Bae, and Hyunjun Lee.
+\newblock Trade-offs in managing risk and technical debt in industrial research
+  labs: an experience report.
+\newblock In {\em Proceedings of the 3rd International Conference on Technical
+  Debt}, TechDebt '20, page 98–102, New York, NY, USA, 2020. Association for
+  Computing Machinery.
+
+\bibitem{Giardino2016}
+C.~Giardino, N.~Paternoster, M.~Unterkalmsteiner, T.~Gorschek, and
+  P.~Abrahamsson.
+\newblock Software development in startup companies: The greenfield startup
+  model.
+\newblock {\em IEEE Transactions on Software Engineering}, 42(6):585--604, June
+  2016.
+
+\bibitem{Whopayso60:online}
+Shriyanka Hore.
+\newblock Who pays off the technical debt for fintech startups ?
+\newblock
+  \url{https://www.finextra.com/blogposting/13924/who-pays-off-the-technical-debt-for-fintech-startups-},
+  2017.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{kitchenham2007guidelines}
+Barbara Kitchenham, Stuart Charters, et~al.
+\newblock Guidelines for performing systematic literature reviews in software
+  engineering, 2007.
+
+\bibitem{Klotins:2018:ETD}
+Eriks Klotins, Michael Unterkalmsteiner, Panagiota Chatzipetrou, Tony Gorschek,
+  Rafael Prikladnicki, Nirnaya Tripathi, and Leandro~Bento Pompermaier.
+\newblock Exploration of technical debt in start-ups.
+\newblock In {\em Proceedings of the 40th International Conference on Software
+  Engineering: Software Engineering in Practice}, ICSE-SEIP '18, pages 75--84,
+  New York, NY, USA, 2018. ACM.
+
+\bibitem{Klotins2018/3183519.3183539}
+Eriks Klotins, Michael Unterkalmsteiner, Panagiota Chatzipetrou, Tony Gorschek,
+  Rafael Prikladnicki, Nirnaya Tripathi, and Leandro~Bento Pompermaier.
+\newblock Exploration of technical debt in start-ups.
+\newblock In {\em Proceedings of the 40th International Conference on Software
+  Engineering: Software Engineering in Practice}, ICSE-SEIP '18, page 75–84,
+  New York, NY, USA, 2018. Association for Computing Machinery.
+
+\bibitem{Klotins882019}
+Eriks Klotins, Michael Unterkalmsteiner, and Tony Gorschek.
+\newblock Software engineering in start-up companies: An analysis of 88
+  experience reports.
+\newblock {\em Empirical Software Engineering}, 24(1):68--102, Feb 2019.
+
+\bibitem{Li:2015}
+Zengyang Li, Paris Avgeriou, and Peng Liang.
+\newblock A systematic mapping study on technical debt and its management.
+\newblock {\em J. Syst. Softw.}, 101(C):193--220, March 2015.
+
+\bibitem{Maldonado7332619}
+Everton da~S. Maldonado and Emad Shihab.
+\newblock Detecting and quantifying different types of self-admitted technical
+  debt.
+\newblock In {\em 2015 IEEE 7th International Workshop on Managing Technical
+  Debt (MTD)}, pages 9--15, 2015.
+
+\bibitem{Balancin62:online}
+Gurinder Mann.
+\newblock Balancing software architecture and infrastructure: Avoiding
+  long-term pitfalls in startups.
+\newblock
+  \url{https://gurinder.tech/balancing-software-architecture-and-infrastructure-avoiding-long-term-pitfalls-in-startups/},
+  2023.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{Qualityv77:online}
+Andy Marks.
+\newblock Quality versus speed: Technical decision making for startups | blah
+  blah blog.
+\newblock
+  \url{https://vampwillow.wordpress.com/2012/06/15/quality-versus-speed-technical-decision-making-for-startups/},
+  2012.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{Ogawa91}
+Rodney~T. Ogawa and Betty Malen.
+\newblock Towards rigor in reviews of multivocal literatures: Applying the
+  exploratory case study method.
+\newblock {\em Review of Educational Research}, 61(3):265--286, 1991.
+
+\bibitem{Totalqua26:online}
+Sandrine Olivencia.
+\newblock Total quality in tech startups to sustain hypergrowth.
+\newblock \url{https://blog.buildtosell.org/total-quality-in-tech-startups/},
+  2022.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{10.1145/3493244.3493254}
+Adriano Pizzini, Ricardo Bortolo~Vieira, Rhodrigo Deda~Gomes, Gleison Santos,
+  Andreia Malucelli, and Sheila Reinehr.
+\newblock Software quality practices in growing startups: A qualitative study.
+\newblock In {\em Proceedings of the XX Brazilian Symposium on Software
+  Quality}, SBQS '21, New York, NY, USA, 2021. Association for Computing
+  Machinery.
+
+\bibitem{Creating18:online}
+Joris Poort.
+\newblock Creating mountains of technical debt in lean startups | launching
+  tech ventures.
+\newblock
+  \url{https://launchingtechventures.blogspot.com/2011/03/creating-mountains-of-technical-debt-in.html},
+  2011.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{HowtoGet43:online}
+Isaac Sacolick.
+\newblock How to get an agile product owner to pay for technical debt.
+\newblock
+  \url{https://blogs.starcio.com/2015/08/get-agile-product-owner-to-pay-technical-debt.html},
+  2015.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{SALTAN2021106510}
+Andrey Saltan and Kari Smolander.
+\newblock Bridging the state-of-the-art and the state-of-the-practice of saas
+  pricing: A multivocal literature review.
+\newblock {\em Information and Software Technology}, 133:106510, 2021.
+
+\bibitem{SanchezGordon2016}
+Mary S{\'a}nchez-Gord{\'o}n, Ricardo Colomo-Palacios, Antonio de~Amescua, and
+  Rory O’Connor.
+\newblock {\em The Route to Software Process Improvement in Small- and
+  Medium-Sized Enterprises}, pages 109--136.
+\newblock 09 2016.
+
+\bibitem{Seaman6225999}
+Carolyn Seaman, Yuepu Guo, Nico Zazworka, Forrest Shull, Clemente Izurieta,
+  Yuanfang Cai, and Antonio Vetrò.
+\newblock Using technical debt data in decision making: Potential decision
+  approaches.
+\newblock In {\em 2012 Third International Workshop on Managing Technical Debt
+  (MTD)}, pages 45--48, 2012.
+
+\bibitem{Blog21:online}
+Amit Somani.
+\newblock 4 non-financial debts startups should not ignore.
+\newblock
+  \url{https://primevp.in/content/blog/non-financial-debts-startups-should-not-ignore/},
+  2019.
+\newblock (Accessed on 12/10/2023).
+
+\bibitem{Unterkalmsteiner16}
+Michael Unterkalmsteiner, Pekka Abrahamsson, Xiaofeng Wang, Anh Nguyen{-}Duc,
+  Syed M.~Ali Shah, Sohaib~Shahid Bajwa, Guido~H. Baltes, Kieran Conboy, Eoin
+  Cullina, Denis Dennehy, Henry Edison, Carlos Fern{\'{a}}ndez{-}S{\'{a}}nchez,
+  Juan Garbajosa, Tony Gorschek, Eriks Klotins, Laura Hokkanen, Fabio Kon,
+  Ilaria Lunesu, Michele Marchesi, Lorraine Morgan, Markku Oivo, Christoph
+  Selig, Pertti Sepp{\"{a}}nen, Roger Sweetman, Pasi Tyrv{\"{a}}inen, Christina
+  Ungerer, and Agust{\'{\i}}n Yag{\"{u}}e.
+\newblock Software startups - {A} research agenda.
+\newblock {\em e-Informatica}, 10(1):89--124, 2016.
+
+\bibitem{Wohlin2014/2601248.2601268}
+Claes Wohlin.
+\newblock Guidelines for snowballing in systematic literature studies and a
+  replication in software engineering.
+\newblock In {\em Proceedings of the 18th International Conference on
+  Evaluation and Assessment in Software Engineering}, EASE '14, New York, NY,
+  USA, 2014. Association for Computing Machinery.
+
+\bibitem{techolut25:online}
+Sreelatha Yelesam.
+\newblock
+  techolution.com/growth-challenges-faced-by-healthcare-technology-startups/.
+\newblock
+  \url{https://www.techolution.com/growth-challenges-faced-by-healthcare-technology-startups/},
+  2016.
+\newblock (Accessed on 12/10/2023).
 
 \end{thebibliography}

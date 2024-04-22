@@ -1,12 +1,5 @@
-%%%% Proceedings format for most of ACM conferences (with the exceptions listed below) and all ICPS volumes.
+\documentclass[manuscript, natbib=false]{acmart}
 
-
-%\documentclass[sigconf]{acmart}
-%%%% As of March 2017, [siggraph] is no longer used. Please use sigconf (above) for SIGGRAPH conferences.
-
-\documentclass[manuscript]{acmart}
-
-\usepackage{url}
 %\usepackage[round]{natbib}
 %\usepackage[natbib, style=authoryear, backend=bibtex]{biblatex}
 \usepackage{tikz}
@@ -26,7 +19,6 @@
 %\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
 \usepackage{booktabs} % For formal tables
-%\usepackage{inputenc}
 \usepackage[utf8]{inputenc}
 \usepackage{dblfloatfix}
 \usepackage{tabularx}
@@ -34,6 +26,7 @@
 \usepackage{xcolor}% Add more colours
 \usepackage{fancybox}%Provides variants of \fbox
 \usepackage{balance}
+\usepackage{url}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -174,8 +167,9 @@
 %
 % The next two lines define the bibliography style to be used, and the bibliography file.
 %\bibliographystyle{ACM-Reference-Format}
-\bibliographystyle{unsrtnat}
-\bibliography{Njima2024LiteratureSurveyBis}
+%\bibliographystyle{unsrtnat}
+\bibliographystyle{plain}
+\bibliography{Njima2024LiteratureSurvey}
 %\nocite{*}
 
 % 
