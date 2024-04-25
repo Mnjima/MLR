@@ -8,8 +8,7 @@ However, technical debt is a common challenge for startups, as they often priori
 While taking on technical debt can help startups get to market faster, it can also lead to increased development costs, decreased quality, and hindered innovation over time~\cite{Seaman6225999, DesignSt86:online}.
 
 %\subsection{Significance of Technical Debt in Startup Environments} -- avoid subsections in the introductions
-Startups are organizations that create scalable, high-tech innovative products and services under conditions of extreme uncertainty, limited resources, multiple influences, new technologies, and evolving markets~\cite{Unterkalmsteiner16}. %Sutton2000
-
+Startups are organizations that create scalable, high-tech innovative products and services under conditions of extreme uncertainty, limited resources, multiple influences, new technologies, and evolving markets~\cite{Unterkalmsteiner16}.
 Startups often operate under resource constraints and time pressure, have inexperienced developers, lack a defined development process, and lack autonomy of decision-making, which lead to the intentional or unintentional accumulation of technical debt~\cite{Besker2018}.
 Klotins et al. explored technical debt in start-ups and found that excessive technical debt could be a cause for missed market opportunities and contribute to start-up failures~\cite{Klotins:2018:ETD}.
 The situation is further exacerbated by the need for rapid product development and iteration to gain a competitive advantage in the market~\cite{Cico0JNM20}.
@@ -24,7 +23,12 @@ The goal of this work is to identify and understand the main contributions of th
 Given the industry-oriented nature of startups and the limited number of formally-published literature in this area, we conducted a Multivocal Literature Review ~\cite{GAROUSI2019101}.
 We chose this method because a significant amount of information related to the research topic is available in grey literature, including technical reports, blogs, and standards that are not typically published in academic sources.
 Multivocal Literature Reviews recognize the need for grey literature rather than constructing evidence from only the knowledge reported in academic settings.
-This work was conducted with the goal of answering the following research questions:
+
+\serge{I would move these research questions into the ``Planning" part of the research design.
+In principle, each research question should also come with a 2 sentence motivation which illustrates why it is a relevant question to ask and why a meta-research like a multi-vocal literature survey may provide an answer.
+This motivation may come from conflicting opinions, know differences with technical debth in large companies, \ldots.}
+
+This work was conducted with the goal of answering the following research questions.
 \begin{enumerate}
 \item \textbf{RQ1.} What is the current state-of-the-art research and practice of technical debt in startups?
 \item \textbf{RQ2.} What factors influence the accumulation of technical debt in software startups?
@@ -37,7 +41,7 @@ This work was conducted with the goal of answering the following research questi
 The rest of this paper is structured as follows.
 Section~\ref{Sec:Research} presents the design and method of this work.
 Section~\ref{Sec:Results} discusses the main findings, while Section \ref{Sec:Framework} deduces an overall framework. Section \ref{Sec:Discussion} presents a discussion of the findings and answers our research questions.
-We examine threats to validity in Section \ref{Sec:Threats}.
+%We examine threats to validity in Section \ref{Sec:Threats}.
 Finally, Section \ref{Sec:Conclusion} presents the conclusion and future work.
 
 \section{Research Design}\label{Sec:Research}
@@ -54,6 +58,7 @@ This approach is particularly valuable for software engineering in startups, whe
 The review process is illustrated in Fig. \ref{fig:MLRprocess}.
 We followed the established procedures and guidelines defined by Garousi et al.~\cite{GAROUSI2019101}.
 It consists of three phases: planning, conducting and reporting.
+\serge{I don't see the "planning'' phase anywhere?}
 We discuss each phase in the rest of this section.
 \tofix{The picture and the process described here are not really consistent.
 Minor issue right now but they must be sycnhronised.}
@@ -62,11 +67,18 @@ This search was conducted in October 2023 and the analysis and reporting was com
 \begin{figure}
   \includegraphics[width=\textwidth]{MLRprocess.jpg}
   \caption{Multivocal Literature Review process adopted in this research \copyright~\cite{SALTAN2021106510}}
-  \tofix{Remove the acromym MLR from the picture}
+ \Description{Types of Primary Sources}  
+  \tofix{Remove the acronyms MLR, WL, GL from the picture}
+  
+  \serge{I would rather see a copy of this picture where you document for each of the arrows how many sources where identified.
+  This ``Quality Assessment" step is nowhere in the figure.}
  \label{fig:MLRprocess}
 \end{figure}
 
 \subsection{Conducting the Multivocal Literature Review}
+\serge{I am not a big fan of subsections.
+But if you have a subsection on ``Conducting", you should also have one on ``Planning" and on ``Reporting''.
+And if you have one on ``Planning'' you should list the research questions there and not in the intro.}
 The search was conducted in three stages.
 \begin{enumerate}
 \item \emph{Data sources and search strategy}: For the formal literature, we selected the list of relevant bibliographic sources following the suggestions of~\cite{kitchenham2007guidelines}, since these sources are
@@ -97,15 +109,25 @@ assessment criteria proposed by Dyba et al.~\cite{DYBA2008833} for scientific li
 We adopted the quality assessment checklist of grey literature from Garousi et al.~\cite{GAROUSI2019101}.
 Each criterion was graded on a binary (`$1$' or `$0$') grade.
 This technique helps to limit the degree of subjectivity and report the results more objectively. 
+\serge{This quality assessment looks interesting.
+But then you need to say how this helped.
+Did you exclude sources because of this?}
 \end{enumerate}
 
+
+\serge{There is an important section missing here; the ``Data Analysis and Synthesis".
+How did you deduce the dimensions in Section~\ref{sec:dimensions}?
+How did you deduce the taxonomy in Figure~\ref{fig:taxonomy}?}
+
 \section{Findings}\label{Sec:Results}
+\serge{This whole "Findings" section is very unbalanced.
+I would move the "Demographics" subsection out of the findings and into the "Research Design".}
 In this section, we present the results from analysing 70 primary sources.
 The results begin with the demographic information which tells us the type of literature, type of sources and publication trend over the years.
 In addition, we present the key dimensions and types of technical debt accrued by startups and the impact of technical debt in startups.
 
 \subsection{Demographics}
-%Classification / types of literature
+\serge{Cut this subsection title and move this into the ``Research Design''}
 A growing body of research has shed light on the intricacies of technical debt in startups.
 Figure \ref{fig:Trend} presents the publication trend over the years and Figure \ref{fig:Sources} shows the categories of our primary sources.
 The highest number of resources we cited came from web blogs and the second highest number of resources were presented at conferences.
@@ -117,7 +139,7 @@ This confirms high practitioners' interest in the topic under study.
 	\centering
 	\includegraphics[width=\linewidth]{PublicationTrend.jpg}
 	\caption{Publication Trend over the years}
-	\Description{}
+	\Description{Publication Trend over the years}
 	\label{fig:Trend}
   \end{subfigure}
 \hfill
@@ -125,28 +147,17 @@ This confirms high practitioners' interest in the topic under study.
 	\centering
 	\includegraphics[width=\linewidth]{TypeSources.jpg}
 	\caption{Types of Primary Sources}
-	\Description{}
+	\Description{Types of Primary Sources}
 	\label{fig:Sources}
   \end{subfigure}
+  \label{fig:Overview}
+  \caption{Overview of the 70 primary sources included in the multi-vocal literature survey}
 \end{figure}
 
-%\begin{figure}
-%	\includegraphics[width=\textwidth]{PublicationTrend.jpg}
-%	\caption{Publication Trend over the years}
-%	\Description{}
-%	\label{fig:Trend}
-%\end{figure}
-
-
-%\begin{figure}
-%	\includegraphics[width=\textwidth]{TypeSources.jpg}
-%	\caption{Types of Primary Sources}
-%	\Description{}
-%	\label{fig:Sources}
-%\end{figure}
-
-\subsection{Key Dimensions and Types of Technical Debt}
-The main dimensions of technical debt that start-ups struggle with are:
+\section{Key Dimensions and Types of Technical Debt}
+\label{sec:dimensions}
+The main dimensions of technical debt that start-ups struggle with are the following.
+\mercy{You will need to document in the analysis part how you arrived at these dimensions}
 
 \paragraph{Code Debt} 
 Code debt is a major concern for startups.
@@ -194,6 +205,10 @@ Developers might need to rely on tribal knowledge or reverse-engineer the code, 
 People Debt refers to the negative consequences of neglecting employee well-being, knowledge transfer, and building a strong company culture in the early stages of a startup~\cite{Blog21:online}. Due to the focus on immediate results startups tend to neglect employee training and development opportunities. This hinders skill development, career growth, and overall employee satisfaction. In addition, employees become overworked and stressed due to long hours, unrealistic deadlines, and a lack of work-life balance ~\cite{Besker2018}.
 
 
+\begin{figure}
+\caption{The Taxonomy Deduced from Primary Sources}
+\Description{Taxonomy}
+\label{fig:taxonomy}
 \begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=lightgray, 
 	level 1/.append style={level distance=5cm,sibling angle=90},
 	level 2/.append style={level distance=3cm,sibling angle=45},]
@@ -231,49 +246,79 @@ child [concept color=lightgray] { node {Mitigation}
 };
 
 \end{tikzpicture}
+\end{figure}
 
-\subsection{Technical Debt Accumulation Causes}
-Technical debt accumulation in startups can be attributed to various factors. Besker et al. found that the intentional accumulation of technical debt in startups is influenced by organizational factors such as the startup phase, developers' experience, founders' software knowledge, and employee growth~\cite{Besker2018}. Additionally, Klotins et al. highlighted that prioritizing development speed over quality, team aspects, and lack of resources contribute to the accumulation of technical debt in startups~\cite{Klotins:2018:ETD}. Furthermore, they emphasized the trade-off between development speed and accumulated technical debt as a crucial determinant for the success of early-stage startups.
+\section{Technical Debt Accumulation Causes}
+\label{sec:accumulation}
 
-Unwanted technical debt in startups can arise due to poor engineering decisions, sloppy individual attitudes, and insufficient coordination of engineering work~\cite{Klotins882019}. The study emphasized the need to model the evolutionary nature of technical debt accumulation, considering the interplay between its benefits and costs over the software product's life cycle.
+\serge{This accumulation is interesting. But doesn't appear in the taxonomy?}
 
-Technical debt in startups can accumulate due to a variety of factors, including:
-\subsubsection{Pressure to meet deadlines and product milestones}
-Startups often face intense pressure to launch their products quickly and meet market demands. This can lead to the prioritization of rapid development over long-term maintainability, encouraging the use of shortcuts, quick fixes, and less maintainable code structures~\cite{Klotins:2018:ETD,Qualityv77:online}. In addition, there's also shorter development cycles. Rapid iteration cycles and frequent feature releases leave little time for code refactoring or comprehensive testing, potentially introducing bugs and inefficiencies.
+Technical debt accumulation in startups can be attributed to various factors.
+Besker et al. found that the intentional accumulation of technical debt in startups is influenced by organizational factors such as the startup phase, developers' experience, founders' software knowledge, and employee growth~\cite{Besker2018}.
+Additionally, Klotins et al. highlighted that prioritizing development speed over quality, team aspects, and lack of resources contribute to the accumulation of technical debt in startups~\cite{Klotins:2018:ETD}.
+Furthermore, they emphasized the trade-off between development speed and accumulated technical debt as a crucial determinant for the success of early-stage startups.
 
-\subsubsection{Limited resources and tight budgets}
-Startups typically operate with limited resources and budgets, making it challenging to invest in comprehensive planning, thorough testing, and robust architectural design. This can contribute to the accumulation of technical debt, as developers may opt for expediency over quality~\cite{FowlerBottlenecks,Balancin62:online}. Furthermore, early-stage startups often have small development teams with limited technical expertise. This can make it difficult to invest time in writing clean code, thorough documentation, and robust tests.
+Unwanted technical debt in startups can arise due to poor engineering decisions, sloppy individual attitudes, and insufficient coordination of engineering work~\cite{Klotins882019}.
+The study emphasized the need to model the evolutionary nature of technical debt accumulation, considering the interplay between its benefits and costs over the software product's life cycle.
 
-\subsubsection{Changing requirements and scope}
-Startups often undergo frequent changes in requirements and scope, making it difficult to maintain a consistent code base. These changes can necessitate the introduction of quick fixes and workarounds, further exacerbating technical debt~\cite{DesignSt86:online,Creating18:online}.
+Technical debt in startups can accumulate due to a variety of factors. We list them below.
 
-\subsubsection{Inexperience and lack of expertise} 
-Startups may have teams with limited experience or expertise in software development, which can increase the risk of technical debt accumulation. Developers may lack the knowledge or skill to effectively evaluate trade-offs and make informed decisions about code quality and maintainability~\cite{Blog21:online}. 
+\paragraph{Pressure to meet deadlines and product milestones}
+Startups often face intense pressure to launch their products quickly and meet market demands.
+This can lead to the prioritization of rapid development over long-term maintainability, encouraging the use of shortcuts, quick fixes, and less maintainable code structures~\cite{Klotins:2018:ETD,Qualityv77:online}.
+In addition, there's also shorter development cycles.
+Rapid iteration cycles and frequent feature releases leave little time for code refactoring or comprehensive testing, potentially introducing bugs and inefficiencies.
 
-\subsubsection{Lack of a structured approach to technical debt management} 
-Many startups lack a formal process for identifying, prioritizing, and resolving technical debt. This can lead to a reactive approach, where technical debt is addressed only when it becomes a critical issue~\cite{FowlerBottlenecks}.
+\paragraph{Limited resources and tight budgets}
+Startups typically operate with limited resources and budgets, making it challenging to invest in comprehensive planning, thorough testing, and robust architectural design.
+This can contribute to the accumulation of technical debt, as developers may opt for expediency over quality~\cite{FowlerBottlenecks,Balancin62:online}.
+Furthermore, early-stage startups often have small development teams with limited technical expertise.
+This can make it difficult to invest time in writing clean code, thorough documentation, and robust tests.
 
-\subsubsection{Failure to invest in infrastructure and tooling} 
-Startups may prioritize investing in product development over infrastructure and tools that can help manage technical debt. This can hinder the ability to identify, track, and remediate technical debt effectively~\cite{Blog21:online,Totalqua26:online}.
+\paragraph{Changing requirements and scope}
+Startups often undergo frequent changes in requirements and scope, making it difficult to maintain a consistent code base.
+These changes can necessitate the introduction of quick fixes and workarounds, further exacerbating technical debt~\cite{DesignSt86:online,Creating18:online}.
 
-\subsubsection{Lack of communication and collaboration}
+\paragraph{Inexperience and lack of expertise} 
+Startups may have teams with limited experience or expertise in software development, which can increase the risk of technical debt accumulation.
+Developers may lack the knowledge or skill to effectively evaluate trade-offs and make informed decisions about code quality and maintainability~\cite{Blog21:online}. 
+
+\paragraph{Lack of a structured approach to technical debt management} 
+Many startups lack a formal process for identifying, prioritizing, and resolving technical debt.
+This can lead to a reactive approach, where technical debt is addressed only when it becomes a critical issue~\cite{FowlerBottlenecks}.
+
+\paragraph{Failure to invest in infrastructure and tooling} 
+Startups may prioritize investing in product development over infrastructure and tools that can help manage technical debt.
+This can hinder the ability to identify, track, and remediate technical debt effectively~\cite{Blog21:online,Totalqua26:online}.
+
+\paragraph{Lack of communication and collaboration}
 Inadequate communication and collaboration between development teams and stakeholders can lead to misunderstandings, missed deadlines, and the introduction of technical debt~\cite{Whopayso60:online,TheTop5S17:online}.
 
-\subsubsection{Inadequate testing and quality assessment}
+\paragraph{Inadequate testing and quality assessment}
 Insufficient testing and quality assurance can lead to undetected bugs, performance issues, and security vulnerabilities, further exacerbating technical debt~\cite{HowtoGet43:online}.
 
-\subsubsection{Lack of a culture of continuous improvement}
+\paragraph{Lack of a culture of continuous improvement}
 A culture that prioritizes rapid development over long-term maintainability can foster a mindset that discourages refactoring and code improvement, contributing to the accumulation of technical debt~\cite{FowlerBottlenecks,Whopayso60:online}.
 
 
 
-\section{Framework for Managing Technical Debt in Startups} \label{Sec:Framework}
+\section{Framework for Managing Technical Debt in Startups}
+\label{Sec:Framework}
+
+\serge{This looks \textbf{very} interesting.
+But \ldots (a) I don't see how you derived this from the literature survey. Explain this in the research design.
+(b) How this relates to the taxonomy in Figure \ref{fig:taxonomy}
+(c) How this relates to the research questions.
+}
+
 The technical debt management process includes activities used to control and reduce the technical debt in a software project.
 
 \subsection{ Phase 1: Continuous Identification and Assessment}
 Startup teams dentify the areas where technical debt is most prevalent and assess the levels of technical debt.
 Measuring technical debt in startups is essential for understanding the extent of code quality issues and their impact on the business.
-Utilizing static code analysis tools such as SonarQube, CodeClimate, or ESLint to scan the code base for issues like code smells, complexity, duplication, and security vulnerabilities. These tools provide metrics and reports that quantify technical debt and highlight areas needing improvement ~\cite{Whopayso60:online}. The Sonar plugin uses a proprietary formula to give an approximate figure to assess the value of debt which looks like this;
+Utilizing static code analysis tools such as SonarQube, CodeClimate, or ESLint to scan the code base for issues like code smells, complexity, duplication, and security vulnerabilities.
+These tools provide metrics and reports that quantify technical debt and highlight areas needing improvement ~\cite{Whopayso60:online}.
+The Sonar plugin uses a proprietary formula to give an approximate figure to assess the value of debt which looks like this;
 
 Debt(in man days) = cost to fix duplications + cost to fix violations + cost to comment publicAPI + cost to fix uncovered complexity + cost to bring complexity below threshold
 
@@ -318,15 +363,35 @@ TD representation/documentation &~\cite{Chicote:2017} & \\ \hline
 
 \section{Conclusion}\label{Sec:Conclusion}
 %PLE/variability helps technical debt
-Technical debt has emerged as a critical concern for startups with the potential to hinder their growth, agility and long-term success. The state of research and practice of technical debt in startups is an evolving area, with a growing emphasis on the financial aspect, integration into development processes, and the relationship with software design aspects. Understanding and managing technical debt is crucial for startups to ensure the long-term sustainability and success of their software products.
-In this Multivocal Literature Review we have comprehensively explored the nature of technical debt in startups by incorporating diverse perspectives from academics, industry experts, startup founders and developers. We identified several key factors contributing to technical debt in startups including rapid development cycles, pressure to release features quickly and limited resources. In addition, we examined the consequences of technical debt by revealing its potential impact on product development, compromising software quality, impeding innovation and increasing long-term maintenance costs. Moreover, we explored the strategies for effectively managing technical debt in startups. These strategies emphasized the importance of proactive debt management, prioritization, continuous refactoring, and establishing clear debt trade-off guidelines.
+Technical debt has emerged as a critical concern for startups with the potential to hinder their growth, agility and long-term success.
+The state of research and practice of technical debt in startups is an evolving area, with a growing emphasis on the financial aspect,
+\serge{I did not read a lot on this financial impact}
+integration into development processes, and the relationship with software design aspects.
+Understanding and managing technical debt is crucial for startups to ensure the long-term sustainability and success of their software products.
+In this Multivocal Literature Review we have comprehensively explored the nature of technical debt in startups by incorporating diverse perspectives from academics, industry experts, startup founders and developers.
+We identified several key factors contributing to technical debt in startups including rapid development cycles, pressure to release features quickly and limited resources.
+In addition, we examined the consequences of technical debt by revealing its potential impact on product development, compromising software quality, impeding innovation and increasing long-term maintenance costs.
+Moreover, we explored the strategies for effectively managing technical debt in startups.
+These strategies emphasized the importance of proactive debt management, prioritization, continuous refactoring, and establishing clear debt trade-off guidelines.
+\serge{These strategies sounds good.
+But how does that relate to the framework in Section \ref{Sec:Framework}?
+It appears that i covers the same issues but then you don't refer to strategies}
 
 The findings of this Multivocal Literature Review suggest several directions for future research and practical implications for startups.
 \begin{enumerate}
-    \item Early identification and prioritization: Future research should explore processes for identifying and prioritizing technical debt early on, rather than letting it accumulate. This can be done through regular code reviews, architectural assessments, and risk assessments. In addition, they should take into consideration the dynamic nature of startups, providing guidance on how to adjust technical debt management practices in response to changing business environments and evolving market needs. As a startup grows and evolves, it may have to develop and maintain a range of products while minimizing duplication and reducing development costs. This can be done by establishing a common core of components and assets that can be shared across multiple products. This reduces the need to rewrite code from scratch, saving time and effort, and minimizing the accumulation of technical debt. This will also facilitate the development of scalable and flexible products that can accommodate future growth and adapt to changing market requirements. This adaptability helps startups avoid the pitfalls of rigid, inflexible architectures that can lead to high levels of technical debt and hinder long-term sustainability.
+    \item Early identification and prioritization: Future research should explore processes for identifying and prioritizing technical debt early on, rather than letting it accumulate.
+This can be done through regular code reviews, architectural assessments, and risk assessments.
+In addition, they should take into consideration the dynamic nature of startups, providing guidance on how to adjust technical debt management practices in response to changing business environments and evolving market needs.
+As a startup grows and evolves, it may have to develop and maintain a range of products while minimizing duplication and reducing development costs.
+This can be done by establishing a common core of components and assets that can be shared across multiple products.
+This reduces the need to rewrite code from scratch, saving time and effort, and minimizing the accumulation of technical debt.
+This will also facilitate the development of scalable and flexible products that can accommodate future growth and adapt to changing market requirements.
+This adaptability helps startups avoid the pitfalls of rigid, inflexible architectures that can lead to high levels of technical debt and hinder long-term sustainability.
     \item Empirical Studies: There is a need for more empirical studies and longitudinal research to comprehensively understand the long-term consequences of technical debt on startup success, performance, and sustainability.
     \item Collaborative Solutions: This will encourage collaboration between academia, industry, and startups thus facilitating the development of best practices, tools, and techniques tailored to the unique needs of startups in managing technical debt.
-    \item Holistic Frameworks: Comprehensive frameworks that integrate non-technical or managerial approaches should be developed. For example, fostering a culture of code ownership and responsibility among developers. As teams grow and take on new duties, it becomes increasingly difficult to find an owner for older code and without ownership, teams are less incentive to fix problems and reduce the accumulation of technical debt.
+    \item Holistic Frameworks: Comprehensive frameworks that integrate non-technical or managerial approaches should be developed.
+For example, fostering a culture of code ownership and responsibility among developers.
+As teams grow and take on new duties, it becomes increasingly difficult to find an owner for older code and without ownership, teams are less incentive to fix problems and reduce the accumulation of technical debt.
     %will improve developer collaboration, leading to shared knowledge and expertise. Such  a collaborative approach will enhance developer productivity and promote consistent code quality, .
 \end{enumerate}
 
