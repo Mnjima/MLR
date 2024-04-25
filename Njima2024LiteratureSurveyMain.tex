@@ -8,8 +8,8 @@ However, technical debt is a common challenge for startups, as they often priori
 While taking on technical debt can help startups get to market faster, it can also lead to increased development costs, decreased quality, and hindered innovation over time~\cite{Seaman6225999, DesignSt86:online}.
 
 %\subsection{Significance of Technical Debt in Startup Environments} -- avoid subsections in the introductions
-Startups are organizations that create scalable, high-tech innovative products and services under conditions of extreme uncertainty, limited resources, multiple influences, new technologies, and evolving markets~\cite{Unterkalmsteiner16,Sutton854066}.
-\tofix{Sutton854066 is missing from the bibtex file}
+Startups are organizations that create scalable, high-tech innovative products and services under conditions of extreme uncertainty, limited resources, multiple influences, new technologies, and evolving markets~\cite{Unterkalmsteiner16}. %Sutton2000
+
 Startups often operate under resource constraints and time pressure, have inexperienced developers, lack a defined development process, and lack autonomy of decision-making, which lead to the intentional or unintentional accumulation of technical debt~\cite{Besker2018}.
 Klotins et al. explored technical debt in start-ups and found that excessive technical debt could be a cause for missed market opportunities and contribute to start-up failures~\cite{Klotins:2018:ETD}.
 The situation is further exacerbated by the need for rapid product development and iteration to gain a competitive advantage in the market~\cite{Cico0JNM20}.
@@ -21,9 +21,9 @@ This inherent pressure often leads to the adoption of shortcuts, quick fixes, an
 In the recent past, there has been a few research efforts to investigate the technical debt phenomenon in startups.
 However, no structured investigation of the area has been performed and none of the systematic literature reviews or mapping studies on technical debt address technical debt in startups.
 The goal of this work is to identify and understand the main contributions of the state-of-art and practice of technical debt in startups.
-Given the industry-oriented nature of startups and the limited number of formally-published literature in this area, we conducted a Multivocal Literature Review (MLR)~\cite{GAROUSI2019101}.\serge{Don't use acronsyms -- replace MLR with ``literature review''. I already started doing this.}
+Given the industry-oriented nature of startups and the limited number of formally-published literature in this area, we conducted a Multivocal Literature Review ~\cite{GAROUSI2019101}.
 We chose this method because a significant amount of information related to the research topic is available in grey literature, including technical reports, blogs, and standards that are not typically published in academic sources.
-MLRs recognize the need for grey literature rather than constructing evidence from only the knowledge reported in academic settings.
+Multivocal Literature Reviews recognize the need for grey literature rather than constructing evidence from only the knowledge reported in academic settings.
 This work was conducted with the goal of answering the following research questions:
 \begin{enumerate}
 \item \textbf{RQ1.} What is the current state-of-the-art research and practice of technical debt in startups?
@@ -35,23 +35,20 @@ This work was conducted with the goal of answering the following research questi
 \end{enumerate}
 
 The rest of this paper is structured as follows.
-\tofix{The structure of the paper isn't clear from this overview.
-Where do you address the reserch questions? In each section? Towards the end?
-You mention a framwrok, taxonomy as the result: where does this come?}
 Section~\ref{Sec:Research} presents the design and method of this work.
 Section~\ref{Sec:Results} discusses the main findings, while Section \ref{Sec:Framework} deduces an overall framework. Section \ref{Sec:Discussion} presents a discussion of the findings and answers our research questions.
-We present the conclusion and examine threats to validity in Section \ref{Sec:Threats}.
+We examine threats to validity in Section \ref{Sec:Threats}.
 Finally, Section \ref{Sec:Conclusion} presents the conclusion and future work.
 
 \section{Research Design}\label{Sec:Research}
-Various approaches for conducting literature reviews are available such as systematic mapping studies, systematic literature reviews, snowballing, and multi-vocal literature reviews.
+Various approaches for conducting literature reviews are available such as Systematic Mapping Studies, Systematic Literature Reviews, snowballing, and Multivocal Literature Reviews.
 In the software engineering field, many researchers frequently perform systematic literature reviews and mapping studies.
 These approaches are typically employed when a sufficient number of academic peer-reviewed articles on a particular subject are accessible.
 During our preliminary study, we identified a limited quantity of peer-reviewed articles on our topic.
 One reason for this scarcity of peer-reviewed literature could be that startup technical debt is quite new research topic.
-Therefore, we had to explore other sources of literature, often referred to as multi-vocal literature.
-Multi-vocal literature include gray literature such as blog posts, web articles, trade journal articles, and white papers.
-In conducting a multi-vocal literature review, we aim to provide a comprehensive and inclusive understanding of technical debt in startups by incorporating a wide range of sources and perspectives from both peer-reviewed and non-published literature~\cite{Ogawa91, Garousi2016/2915970.2916008}.
+Therefore, we had to explore other sources of literature, often referred to as multivocal literature.
+Multivocal literature include gray literature such as blog posts, web articles, trade journal articles, and white papers.
+In conducting a Multivocal Literature Review, we aim to provide a comprehensive and inclusive understanding of technical debt in startups by incorporating a wide range of sources and perspectives from both peer-reviewed and non-published literature~\cite{Ogawa91, Garousi2016/2915970.2916008}.
 This approach is particularly valuable for software engineering in startups, where it is essential to capture both the state of the practice and the state of the research and therefore, provide a more holistic view of the field. 
 
 The review process is illustrated in Fig. \ref{fig:MLRprocess}.
@@ -60,16 +57,16 @@ It consists of three phases: planning, conducting and reporting.
 We discuss each phase in the rest of this section.
 \tofix{The picture and the process described here are not really consistent.
 Minor issue right now but they must be sycnhronised.}
-This search was conducted in October 2023 and the analysis and reporting was completed in December 2023.\tofix{Update these dates.}
+This search was conducted in October 2023 and the analysis and reporting was completed in April 2024.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{MLRprocess.jpg}
-  \caption{Multi-vocal literature review process adopted in this research \copyright~\cite{SALTAN2021106510}}
+  \caption{Multivocal Literature Review process adopted in this research \copyright~\cite{SALTAN2021106510}}
   \tofix{Remove the acromym MLR from the picture}
  \label{fig:MLRprocess}
 \end{figure}
 
-\subsection{Conducting the Multi-Vocal Literature Survey}
+\subsection{Conducting the Multivocal Literature Review}
 The search was conducted in three stages.
 \begin{enumerate}
 \item \emph{Data sources and search strategy}: For the formal literature, we selected the list of relevant bibliographic sources following the suggestions of~\cite{kitchenham2007guidelines}, since these sources are
@@ -105,37 +102,32 @@ This technique helps to limit the degree of subjectivity and report the results 
 \section{Findings}\label{Sec:Results}
 In this section, we present the results from analysing 70 primary sources.
 The results begin with the demographic information which tells us the type of literature, type of sources and publication trend over the years.
-We will~\tofix{No future or pas tense in a paper. For the reader this is all in present tense.}
-then present a detailed assessment based on the thematic analysis.
+In addition, we present the key dimensions and types of technical debt accrued by startups and the impact of technical debt in startups.
 
 \subsection{Demographics}
 %Classification / types of literature
 A growing body of research has shed light on the intricacies of technical debt in startups.
-Figure \ref{fig:Trend} presents the publication trend over that years and shows that there's been active and growing research efforts evident since 2019.
-\serge{I know this pops up in every literature survey.
-But I always have trouble with such an observation.
-The number of academic papers is growing exponentially.
-And if you include grey literature it probably grows super exponentially.
-So of course, for any given topic the number of sources will grow.}
+Figure \ref{fig:Trend} presents the publication trend over the years and Figure \ref{fig:Sources} shows the categories of our primary sources.
+The highest number of resources we cited came from web blogs and the second highest number of resources were presented at conferences.
+This confirms high practitioners' interest in the topic under study.
 
 
 \begin{figure}
-  \begin{subfigure}[b]{0.5\textwidth}
+  \begin{subfigure}[b]{0.45\linewidth}
 	\centering
-	\includegraphics[width=\textwidth]{PublicationTrend.jpg}
+	\includegraphics[width=\linewidth]{PublicationTrend.jpg}
 	\caption{Publication Trend over the years}
 	\Description{}
 	\label{fig:Trend}
   \end{subfigure}
-
-  \begin{subfigure}[b]{0.5\textwidth}
+\hfill
+  \begin{subfigure}[b]{0.45\linewidth}
 	\centering
-	\includegraphics[width=\textwidth]{TypeSources.jpg}
+	\includegraphics[width=\linewidth]{TypeSources.jpg}
 	\caption{Types of Primary Sources}
 	\Description{}
 	\label{fig:Sources}
   \end{subfigure}
-  
 \end{figure}
 
 %\begin{figure}
@@ -145,11 +137,6 @@ So of course, for any given topic the number of sources will grow.}
 %	\label{fig:Trend}
 %\end{figure}
 
-Figure \ref{fig:Sources} shows the categories of our primary sources.
-The highest number of resources we cited came from web blogs and the second highest number of resources were presented at conferences.
-This clearly shows high practitioners' interest in the topic under study.
-\serge{I have a problem with this ``clearly shows \ldots''; you search is biased.
-I would rather see ``confirms''.}
 
 %\begin{figure}
 %	\includegraphics[width=\textwidth]{TypeSources.jpg}
@@ -158,13 +145,7 @@ I would rather see ``confirms''.}
 %	\label{fig:Sources}
 %\end{figure}
 
-\subsection{State of the art}
-In this section, we discuss different types of technical debt accrued by startups with the help of relevant examples. This section answers RQ1 - What is the current state-of-the-art research and practice of technical debt in startups?
-\serge{The last section of the intro states that you would address the research questions in Section~\ref{Sec:Discussion}.
-Why then do you do it here?}
-
 \subsection{Key Dimensions and Types of Technical Debt}
-\tofix{Are these dimensions part of the State of the art or is this actually a new section?}
 The main dimensions of technical debt that start-ups struggle with are:
 
 \paragraph{Code Debt} 
@@ -194,7 +175,7 @@ By prioritizing testing practices, adopting automation, and continuously improvi
 \paragraph{Architecture Debt}
 Architecture debt, refers to the accumulation of sub-optimal design choices that create technical limitations and increase development complexity as the product scales~\cite{Startups4:online}.
 The initial architecture may not be designed to handle an increase in users or data volume.
-This can lead to performance issues and system outages as the startup scales~\cite{Qualityv77:online}.
+This can lead to performance issues and system outages as the startup scales~\cite{Qualityv77:online,Creating18:online}.
 
 Startups often begin with a monolith, a single code base handling all functionalities.
 While this is efficient initially, it can become a bottleneck for scalability and maintenance as the product grows.
@@ -210,7 +191,7 @@ Moreover, troubleshooting issues or fixing bugs becomes more difficult without p
 Developers might need to rely on tribal knowledge or reverse-engineer the code, increasing maintenance costs~\cite{DesignSt86:online}.
 
 \paragraph{People Debt}
-People Debt refers to the negative consequences of neglecting employee well-being, knowledge transfer, and building a strong company culture in the early stages of a startup~\cite{Blog21:online}. 
+People Debt refers to the negative consequences of neglecting employee well-being, knowledge transfer, and building a strong company culture in the early stages of a startup~\cite{Blog21:online}. Due to the focus on immediate results startups tend to neglect employee training and development opportunities. This hinders skill development, career growth, and overall employee satisfaction. In addition, employees become overworked and stressed due to long hours, unrealistic deadlines, and a lack of work-life balance ~\cite{Besker2018}.
 
 
 \begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=lightgray, 
@@ -286,29 +267,30 @@ A culture that prioritizes rapid development over long-term maintainability can 
 
 
 
-\section{Approaches to Identifying and Managing Technical Debt in Startups} \label{Sec:Framework}
-The technical debt management process includes activities used to control and reduce the technical debt in a software project. Table \ref{tab:TDMactivities} present the various technical debt management activities and the corresponding reference to the work that presents them.
+\section{Framework for Managing Technical Debt in Startups} \label{Sec:Framework}
+The technical debt management process includes activities used to control and reduce the technical debt in a software project.
 
-\subsection{Identification}
-
-\subsection{Measurement}
-Measuring technical debt in startups is essential for understanding the extent of code quality issues and their impact on the business. Here are some approaches to measure technical debt in startup projects:
-
-\subsubsection{Static Code Analysis} 
-Utilizing static code analysis tools such as SonarQube, CodeClimate, or ESLint to scan the code base for issues like code smells, complexity, duplication, and security vulnerabilities. These tools provide metrics and reports that quantify technical debt and highlight areas needing improvement~\cite{Whopayso60:online}. The Sonar plugin uses a proprietary formula to give an approximate a dollar figure to assess the value of debt which looks like this;
+\subsection{ Phase 1: Continuous Identification and Assessment}
+Startup teams dentify the areas where technical debt is most prevalent and assess the levels of technical debt.
+Measuring technical debt in startups is essential for understanding the extent of code quality issues and their impact on the business.
+Utilizing static code analysis tools such as SonarQube, CodeClimate, or ESLint to scan the code base for issues like code smells, complexity, duplication, and security vulnerabilities. These tools provide metrics and reports that quantify technical debt and highlight areas needing improvement ~\cite{Whopayso60:online}. The Sonar plugin uses a proprietary formula to give an approximate figure to assess the value of debt which looks like this;
 
 Debt(in man days) = cost to fix duplications + cost to fix violations + cost to comment publicAPI + cost to fix uncovered complexity + cost to bring complexity below threshold
 
-\subsection{Repayment}
+\subsection{Phase 2: Prioritization and Planning}
+-prioritize based on impact
 
-\subsection{Monitoring}
-\subsection{Prioritization}
-\subsection{Communication}
-\subsection{Prevention}
-\subsection{Documentation}
+\subsection{Phase 3: Integration with Development Process and Repayment}
+-refine development practices to minimize the accumulation of technical debt
+-training
+
+\subsection{Phase 4: Feedback and Iteration}
+-gather feedback
+
+Table \ref{tab:TDMactivities} present the various technical debt management activities and the corresponding reference to the work that presents them.
 
 \begin{table}[h!]
-    
+
 \centering
 \begin{tabular}{|c|c|c|}
     \hline
@@ -331,15 +313,15 @@ TD representation/documentation &~\cite{Chicote:2017} & \\ \hline
 
 
 
-\section{Threats to Validity}\label{Sec:Threats}
+%\section{Threats to Validity}\label{Sec:Threats}
 
 
 \section{Conclusion}\label{Sec:Conclusion}
 %PLE/variability helps technical debt
 Technical debt has emerged as a critical concern for startups with the potential to hinder their growth, agility and long-term success. The state of research and practice of technical debt in startups is an evolving area, with a growing emphasis on the financial aspect, integration into development processes, and the relationship with software design aspects. Understanding and managing technical debt is crucial for startups to ensure the long-term sustainability and success of their software products.
-In this multivocal literature review we have comprehensively explored the nature of technical debt in startups by incorporating diverse perspectives from academics, industry experts, startup founders and developers. We identified several key factors contributing to technical debt in startups including rapid development cycles, pressure to release features quickly and limited resources. In addition, we examined the consequences of technical debt by revealing its potential impact on product development, compromising software quality, impeding innovation and increasing long-term maintenance costs. Moreover, we explored the strategies for effectively managing technical debt in startups. These strategies emphasized the importance of proactive debt management, prioritization, continuous refactoring, and establishing clear debt trade-off guidelines.
+In this Multivocal Literature Review we have comprehensively explored the nature of technical debt in startups by incorporating diverse perspectives from academics, industry experts, startup founders and developers. We identified several key factors contributing to technical debt in startups including rapid development cycles, pressure to release features quickly and limited resources. In addition, we examined the consequences of technical debt by revealing its potential impact on product development, compromising software quality, impeding innovation and increasing long-term maintenance costs. Moreover, we explored the strategies for effectively managing technical debt in startups. These strategies emphasized the importance of proactive debt management, prioritization, continuous refactoring, and establishing clear debt trade-off guidelines.
 
-The findings of this multivocal literature review suggest several directions for future research and practical implications for startups.
+The findings of this Multivocal Literature Review suggest several directions for future research and practical implications for startups.
 \begin{enumerate}
     \item Early identification and prioritization: Future research should explore processes for identifying and prioritizing technical debt early on, rather than letting it accumulate. This can be done through regular code reviews, architectural assessments, and risk assessments. In addition, they should take into consideration the dynamic nature of startups, providing guidance on how to adjust technical debt management practices in response to changing business environments and evolving market needs. As a startup grows and evolves, it may have to develop and maintain a range of products while minimizing duplication and reducing development costs. This can be done by establishing a common core of components and assets that can be shared across multiple products. This reduces the need to rewrite code from scratch, saving time and effort, and minimizing the accumulation of technical debt. This will also facilitate the development of scalable and flexible products that can accommodate future growth and adapt to changing market requirements. This adaptability helps startups avoid the pitfalls of rigid, inflexible architectures that can lead to high levels of technical debt and hinder long-term sustainability.
     \item Empirical Studies: There is a need for more empirical studies and longitudinal research to comprehensively understand the long-term consequences of technical debt on startup success, performance, and sustainability.
@@ -348,5 +330,5 @@ The findings of this multivocal literature review suggest several directions for
     %will improve developer collaboration, leading to shared knowledge and expertise. Such  a collaborative approach will enhance developer productivity and promote consistent code quality, .
 \end{enumerate}
 
-This MLR serves as a foundational stepping stone, advocating for continued exploration, collaboration, and innovation in addressing technical debt in startups.
+This Multivocal Literature Review serves as a foundational stepping stone, advocating for continued exploration, collaboration, and innovation in addressing technical debt in startups.
 Continued exploration will pave the way for more adaptable and effective strategies in addressing technical debt.
