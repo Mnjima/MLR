@@ -24,19 +24,11 @@ Given the industry-oriented nature of startups and the limited number of formall
 We chose this method because a significant amount of information related to the research topic is available in grey literature, including technical reports, blogs, and standards that are not typically published in academic sources.
 Multivocal Literature Reviews recognize the need for grey literature rather than constructing evidence from only the knowledge reported in academic settings.
 
-\serge{I would move these research questions into the ``Planning" part of the research design.
+\mercy{DONE \serge{I would move these research questions into the ``Planning" part of the research design.
 In principle, each research question should also come with a 2 sentence motivation which illustrates why it is a relevant question to ask and why a meta-research like a multi-vocal literature survey may provide an answer.
-This motivation may come from conflicting opinions, know differences with technical debth in large companies, \ldots.}
+This motivation may come from conflicting opinions, know differences with technical debt in large companies, \ldots.}}
 
-This work was conducted with the goal of answering the following research questions.
-\begin{enumerate}
-\item \textbf{RQ1.} What is the current state-of-the-art research and practice of technical debt in startups?
-\item \textbf{RQ2.} What factors influence the accumulation of technical debt in software startups?
-%\item {What are the challenges and benefits of technical debt for software startups?}
-\item \textbf{RQ3.} How do startups manage technical debt and when does that become a priority?
-\item \textbf{RQ4.} What are the reported mitigating strategies of technical debt in startups?
-\item \textbf{RQ5.} What are the possible future directions of technical debt research and practice in startups?
-\end{enumerate}
+
 
 The rest of this paper is structured as follows.
 Section~\ref{Sec:Research} presents the design and method of this work.
@@ -45,6 +37,14 @@ Section~\ref{Sec:Results} discusses the main findings, while Section \ref{Sec:Fr
 Finally, Section \ref{Sec:Conclusion} presents the conclusion and future work.
 
 \section{Research Design}\label{Sec:Research}
+This section outlines the Multivocal literature review approach adopted in this
+work.
+We followed the established procedures and guidelines defined by Garousi et al.~\cite{GAROUSI2019101}. The review process is illustrated in Fig. \ref{fig:MLRprocess}.
+This search was conducted in October 2023 and the analysis and reporting was completed in July 2024.
+
+\subsection*{Planning the Multivocal Literature Review}
+The planning of this work involved establishing and motivating the need for a Multivocal literature review and developing the research questions.  
+
 Various approaches for conducting literature reviews are available such as Systematic Mapping Studies, Systematic Literature Reviews, snowballing, and Multivocal Literature Reviews.
 In the software engineering field, many researchers frequently perform systematic literature reviews and mapping studies.
 These approaches are typically employed when a sufficient number of academic peer-reviewed articles on a particular subject are accessible.
@@ -55,14 +55,17 @@ Multivocal literature include gray literature such as blog posts, web articles, 
 In conducting a Multivocal Literature Review, we aim to provide a comprehensive and inclusive understanding of technical debt in startups by incorporating a wide range of sources and perspectives from both peer-reviewed and non-published literature~\cite{Ogawa91, Garousi2016/2915970.2916008}.
 This approach is particularly valuable for software engineering in startups, where it is essential to capture both the state of the practice and the state of the research and therefore, provide a more holistic view of the field. 
 
-The review process is illustrated in Fig. \ref{fig:MLRprocess}.
-We followed the established procedures and guidelines defined by Garousi et al.~\cite{GAROUSI2019101}.
-It consists of three phases: planning, conducting and reporting.
-\serge{I don't see the "planning'' phase anywhere?}
-We discuss each phase in the rest of this section.
-\tofix{The picture and the process described here are not really consistent.
-Minor issue right now but they must be sycnhronised.}
-This search was conducted in October 2023 and the analysis and reporting was completed in April 2024.
+This work was conducted with the goal of answering the following research questions.
+\begin{enumerate}
+\item \textbf{RQ1.} What is the current state-of-the-art research and practice of technical debt in startups? Startups, with their focus on rapid iteration and minimum viable product, often prioritize speed over code quality, leading to a higher tolerance for technical debt. However, this approach may hinder long-term scalability. A multivocal literature review is best placed to capture diverse perspectives from industry and academia and identify best practices that balance innovation with maintainability.
+\item \textbf{RQ2.} What factors influence the accumulation of technical debt in software startups? Although code quality is a major factor in both startups and large companies, startups face additional pressures. Rapid hiring with varying skill levels, frequent product pivots, and limited resources can all contribute to technical debt accumulation in startups, unlike the more established processes and longer development cycles found in large companies. This multivocal literature review will uncover a wider range of factors beyond just code quality, including pressure to launch quickly, limited resources, and team composition.
+%\item {What are the challenges and benefits of technical debt for software startups?}
+\item \textbf{RQ3.} How do startups manage technical debt and when does that become a priority? Knowing when to address technical debt is crucial for startups. Like any other organization, startups must balance the need for new features with fixing existing code. However, when should addressing technical debt early to avoid future bottlenecks be a priority over short-term gains and user acquisition. This multivocal literature review will examine this issue and identify decision-making frameworks specific to the startup environment.
+\item \textbf{RQ4.} What are the reported mitigating strategies of technical debt in startups? Effective strategies for managing technical debt in startups can save time and resources in the long run. Code reviews and automated testing are valuable in both startups and large companies, but startups might prioritize lightweight frameworks and developer education for faster fixes. This multivocal literature review explores these contrasting approaches and identifies the most successful strategies for the startup landscape.
+\item \textbf{RQ5.} What are the possible future directions of technical debt research and practice in startups? Startups are constantly evolving. As successful startups scale, their technical debt challenges might converge with those faced by large companies. This multivocal literature review identifies emerging trends and explores how future research and practice can address technical debt in the evolving startup landscape.
+
+\end{enumerate}
+
 
 \begin{figure}
   \includegraphics[width=\textwidth]{MLRprocess.jpg}
@@ -70,15 +73,15 @@ This search was conducted in October 2023 and the analysis and reporting was com
  \Description{Types of Primary Sources}  
   \tofix{Remove the acronyms MLR, WL, GL from the picture}
   
-  \serge{I would rather see a copy of this picture where you document for each of the arrows how many sources where identified.
-  This ``Quality Assessment" step is nowhere in the figure.}
+  \mercy{In Progress\serge{I would rather see a copy of this picture where you document for each of the arrows how many sources where identified.
+  This ``Quality Assessment" step is nowhere in the figure.}}
  \label{fig:MLRprocess}
 \end{figure}
 
-\subsection{Conducting the Multivocal Literature Review}
-\serge{I am not a big fan of subsections.
+\subsection*{Conducting the Multivocal Literature Review}
+\mercy{Fixed \serge{I am not a big fan of subsections.
 But if you have a subsection on ``Conducting", you should also have one on ``Planning" and on ``Reporting''.
-And if you have one on ``Planning'' you should list the research questions there and not in the intro.}
+And if you have one on ``Planning'' you should list the research questions there and not in the intro.}}
 The search was conducted in three stages.
 \begin{enumerate}
 \item \emph{Data sources and search strategy}: For the formal literature, we selected the list of relevant bibliographic sources following the suggestions of~\cite{kitchenham2007guidelines}, since these sources are
@@ -104,37 +107,48 @@ This inclusion criterion defines the basic scope of our study.
 (5) only mention technical debt in an introductory manner and do not fully or partly focus on its occurrence in startup context.
 \end{itemize}
 
-\item \emph{Quality assessment}: To apply quality assessment criteria, we adopted the 11-factor quality
-assessment criteria proposed by Dyba et al.~\cite{DYBA2008833} for scientific literature.
-We adopted the quality assessment checklist of grey literature from Garousi et al.~\cite{GAROUSI2019101}.
+\item \emph{Quality assessment}: The results were assessed for quality in terms of the position and certainty of the source, clarity, detail, plausibility, and alignment with the research focus as determined by the research questions. We evaluated the validity and impartiality of the information in the grey literature. Unlike white literature, which typically undergoes a rigorous review and publication process, grey literature includes a wider variety of sources with less standardized procedures. As a result, the quality of grey literature varies significantly, making its evaluation more challenging. We adopted the quality assessment checklist of grey literature from Garousi et al.~\cite{GAROUSI2019101}.
 Each criterion was graded on a binary (`$1$' or `$0$') grade.
-This technique helps to limit the degree of subjectivity and report the results more objectively. 
-\serge{This quality assessment looks interesting.
+This technique helps to limit the degree of subjectivity and report the results more objectively. Table \ref{tab:QualityGL} presents quality assessment check list.  Based on this assessment checklist, each of the studies included received a score of 1.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|}
+    \hline
+    1 & Do the authors have sufficient expertise in the field?  \\ \hline
+    2 & Is the publishing organization reputable? \\ \hline
+    3 & Is there an adequate description of the context in which the work was carried out?\\ \hline
+    4 & Does the work seem to be balanced in presentation? \\ \hline
+    5 & Is there a clear statement of findings? \\ \hline
+ 6 & Does it enrich or add something unique to the research or practice? \\ \hline
+ 7 & Is there vested interest? e.g a tool comparison by authors that are working for a particular tool vendor \\ \hline
+    \end{tabular}
+
+\caption{Quality Assessment Check List}
+  \label{tab:QualityGL}
+\end{table}
+\mercy{ FIXED \serge{This quality assessment looks interesting.
 But then you need to say how this helped.
-Did you exclude sources because of this?}
+Did you exclude sources because of this?}}
+
+\mercy {True \serge{There is an important section missing here; the ``Data Analysis and Synthesis".
+How did you deduce the dimensions in Section~\ref{sec:dimensions}?
+How did you deduce the taxonomy in Figure~\ref{fig:taxonomy}?}}
+
+\item \emph{Data Extraction and Analysis}:
+After completion of the quality assessment, we created a data extraction spreadsheet in Microsoft Excel
+to capture relevant information. We included study characteristics (authors, year, methods used), key findings related to our research questions, attributes such as technical debt types found, technical debt accumulation causes, and mitigation strategies. After the data extraction, data analysis was done using
+thematic analysis techniques to identify recurring themes. The thematic analysis yielded the themes presented in the taxonomy and the framework.
 \end{enumerate}
 
 
-\serge{There is an important section missing here; the ``Data Analysis and Synthesis".
-How did you deduce the dimensions in Section~\ref{sec:dimensions}?
-How did you deduce the taxonomy in Figure~\ref{fig:taxonomy}?}
 
-\section{Findings}\label{Sec:Results}
-\serge{This whole "Findings" section is very unbalanced.
-I would move the "Demographics" subsection out of the findings and into the "Research Design".}
-In this section, we present the results from analysing 70 primary sources.
-The results begin with the demographic information which tells us the type of literature, type of sources and publication trend over the years.
-In addition, we present the key dimensions and types of technical debt accrued by startups and the impact of technical debt in startups.
-
-\subsection{Demographics}
-\serge{Cut this subsection title and move this into the ``Research Design''}
-A growing body of research has shed light on the intricacies of technical debt in startups.
-Figure \ref{fig:Trend} presents the publication trend over the years and Figure \ref{fig:Sources} shows the categories of our primary sources.
+\section{Results}\label{Sec:Results}
+In this section, we present the main findings of this work. We present the demographic information from analysing 70 primary sources which tells us the type of literature, type of sources and publication trend over the years. Figure \ref{fig:Trend} presents the publication trend over the years and Figure \ref{fig:Sources} shows the categories of our primary sources.
 The highest number of resources we cited came from web blogs and the second highest number of resources were presented at conferences.
 This confirms high practitioners' interest in the topic under study.
 
-
-\begin{figure}
+\begin{figure}[h!]
   \begin{subfigure}[b]{0.45\linewidth}
 	\centering
 	\includegraphics[width=\linewidth]{PublicationTrend.jpg}
@@ -154,10 +168,12 @@ This confirms high practitioners' interest in the topic under study.
   \caption{Overview of the 70 primary sources included in the multi-vocal literature survey}
 \end{figure}
 
-\section{Key Dimensions and Types of Technical Debt}
+
+In addition, we present the key dimensions and types of technical debt accrued by startups and the impact of technical debt in startups.
+\subsection*{Key Dimensions and Types of Technical Debt}
 \label{sec:dimensions}
 The main dimensions of technical debt that start-ups struggle with are the following.
-\mercy{You will need to document in the analysis part how you arrived at these dimensions}
+\mercy{WIP {You will need to document in the analysis part how you arrived at these dimensions}}
 
 \paragraph{Code Debt} 
 Code debt is a major concern for startups.
@@ -223,12 +239,12 @@ child [concept color=lightgray] {node {Type}
 	child { node {People}}
 	%child { node {}}
 }
-child [concept color=lightgray] { node {Classification}
-	child { node {Intentional}}
-	child { node {Non-intentional}}
-	child { node {Prudent}}
-	child { node {Reckless}}
-	%child { node {}}
+child [concept color=lightgray] { node {Accumulation Causes}
+	child { node {Time pressure}}
+	child { node {Changing requirements}}
+	child { node {Lack of Expertise}}
+	child { node {Inadequate Testing}}
+	child { node {Tight Budgets}}
 }
 child [concept color=lightgray] { node {Impact}
 	child { node {Strategic}}
@@ -248,10 +264,10 @@ child [concept color=lightgray] { node {Mitigation}
 \end{tikzpicture}
 \end{figure}
 
-\section{Technical Debt Accumulation Causes}
+\subsection*{Technical Debt Accumulation Causes}
 \label{sec:accumulation}
 
-\serge{This accumulation is interesting. But doesn't appear in the taxonomy?}
+\mercy{ done\serge{This accumulation is interesting. But doesn't appear in the taxonomy?}}
 
 Technical debt accumulation in startups can be attributed to various factors.
 Besker et al. found that the intentional accumulation of technical debt in startups is influenced by organizational factors such as the startup phase, developers' experience, founders' software knowledge, and employee growth~\cite{Besker2018}.
@@ -305,16 +321,16 @@ A culture that prioritizes rapid development over long-term maintainability can 
 \section{Framework for Managing Technical Debt in Startups}
 \label{Sec:Framework}
 
-\serge{This looks \textbf{very} interesting.
+\mercy{ WIP - this is derived from the mitigation part of the taxonomy \serge{This looks \textbf{very} interesting.
 But \ldots (a) I don't see how you derived this from the literature survey. Explain this in the research design.
 (b) How this relates to the taxonomy in Figure \ref{fig:taxonomy}
-(c) How this relates to the research questions.
-}
+
+}}
 
 The technical debt management process includes activities used to control and reduce the technical debt in a software project.
 
 \subsection{ Phase 1: Continuous Identification and Assessment}
-Startup teams dentify the areas where technical debt is most prevalent and assess the levels of technical debt.
+Startup teams identify the areas where technical debt is most prevalent and assess the levels of technical debt.
 Measuring technical debt in startups is essential for understanding the extent of code quality issues and their impact on the business.
 Utilizing static code analysis tools such as SonarQube, CodeClimate, or ESLint to scan the code base for issues like code smells, complexity, duplication, and security vulnerabilities.
 These tools provide metrics and reports that quantify technical debt and highlight areas needing improvement ~\cite{Whopayso60:online}.
@@ -323,7 +339,7 @@ The Sonar plugin uses a proprietary formula to give an approximate figure to ass
 Debt(in man days) = cost to fix duplications + cost to fix violations + cost to comment publicAPI + cost to fix uncovered complexity + cost to bring complexity below threshold
 
 \subsection{Phase 2: Prioritization and Planning}
--prioritize based on impact
+Given that not all technical debt is equal, teams need to plan and prioritize. Martin Fowler's technical debt quadrant could be a useful tool to categorize technical debt based on its urgency (those that impact critical features now) and likelihood to cause problems (those that are likely to break soon or hinder future development) ~\cite{martinfowlerTechnical}. Developers can then focus on high-urgency, high-impact debt first.
 
 \subsection{Phase 3: Integration with Development Process and Repayment}
 -refine development practices to minimize the accumulation of technical debt
