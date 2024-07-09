@@ -1,1 +1,5 @@
 Njima2024LiteratureSurvey.pdf
+*.aux
+*.log
+*.out
+*.gz

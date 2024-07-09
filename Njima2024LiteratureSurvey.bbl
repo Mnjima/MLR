@@ -103,11 +103,6 @@ Anh~Nguyen Duc and Pekka Abrahamsson.
   Evaluation and Assessment in Software Engineering}, EASE '17, page 134–143,
   New York, NY, USA, 2017. Association for Computing Machinery.
 
-\bibitem{DYBA2008833}
-Tore Dybå and Torgeir Dingsøyr.
-\newblock Empirical studies of agile software development: A systematic review.
-\newblock {\em Information and Software Technology}, 50(9):833--859, 2008.
-
 \bibitem{10043622}
 George Fairbanks.
 \newblock Fix tech debt with virtuous cycles.
@@ -127,6 +122,13 @@ Martin Fowler.
 \newblock \url{https://martinfowler.com/bliki/DesignStaminaHypothesis.html},
   2007.
 \newblock (Accessed on 12/10/2023).
+
+\bibitem{martinfowlerTechnical}
+Martin Fowler.
+\newblock {T}echnical {D}ebt {Q}uadrant --- martinfowler.com.
+\newblock \url{https://martinfowler.com/bliki/TechnicalDebtQuadrant.html},
+  2009.
+\newblock [Accessed 12/10/2023].
 
 \bibitem{Garousi2016/2915970.2916008}
 Vahid Garousi, Michael Felderer, and Mika~V. M\"{a}ntyl\"{a}.

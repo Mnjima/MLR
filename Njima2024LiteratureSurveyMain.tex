@@ -24,12 +24,6 @@ Given the industry-oriented nature of startups and the limited number of formall
 We chose this method because a significant amount of information related to the research topic is available in grey literature, including technical reports, blogs, and standards that are not typically published in academic sources.
 Multivocal Literature Reviews recognize the need for grey literature rather than constructing evidence from only the knowledge reported in academic settings.
 
-\mercy{DONE \serge{I would move these research questions into the ``Planning" part of the research design.
-In principle, each research question should also come with a 2 sentence motivation which illustrates why it is a relevant question to ask and why a meta-research like a multi-vocal literature survey may provide an answer.
-This motivation may come from conflicting opinions, know differences with technical debt in large companies, \ldots.}}
-
-
-
 The rest of this paper is structured as follows.
 Section~\ref{Sec:Research} presents the design and method of this work.
 Section~\ref{Sec:Results} discusses the main findings, while Section \ref{Sec:Framework} deduces an overall framework. Section \ref{Sec:Discussion} presents a discussion of the findings and answers our research questions.
@@ -58,11 +52,11 @@ This approach is particularly valuable for software engineering in startups, whe
 This work was conducted with the goal of answering the following research questions.
 \begin{enumerate}
 \item \textbf{RQ1.} What is the current state-of-the-art research and practice of technical debt in startups? Startups, with their focus on rapid iteration and minimum viable product, often prioritize speed over code quality, leading to a higher tolerance for technical debt. However, this approach may hinder long-term scalability. A multivocal literature review is best placed to capture diverse perspectives from industry and academia and identify best practices that balance innovation with maintainability.
-\item \textbf{RQ2.} What factors influence the accumulation of technical debt in software startups? Although code quality is a major factor in both startups and large companies, startups face additional pressures. Rapid hiring with varying skill levels, frequent product pivots, and limited resources can all contribute to technical debt accumulation in startups, unlike the more established processes and longer development cycles found in large companies. This multivocal literature review will uncover a wider range of factors beyond just code quality, including pressure to launch quickly, limited resources, and team composition.
+\item \textbf{RQ2.} What factors influence the accumulation of technical debt in software startups? Although code quality is a major factor in both startups and large companies, startups face additional pressures. Rapid hiring with varying skill levels, frequent product pivots, and limited resources can all contribute to technical debt accumulation in startups, unlike the more established processes and longer development cycles found in large companies. A multivocal literature review could uncover a wider range of factors beyond just code quality, including pressure to launch quickly, limited resources, and team composition.
 %\item {What are the challenges and benefits of technical debt for software startups?}
-\item \textbf{RQ3.} How do startups manage technical debt and when does that become a priority? Knowing when to address technical debt is crucial for startups. Like any other organization, startups must balance the need for new features with fixing existing code. However, when should addressing technical debt early to avoid future bottlenecks be a priority over short-term gains and user acquisition. This multivocal literature review will examine this issue and identify decision-making frameworks specific to the startup environment.
-\item \textbf{RQ4.} What are the reported mitigating strategies of technical debt in startups? Effective strategies for managing technical debt in startups can save time and resources in the long run. Code reviews and automated testing are valuable in both startups and large companies, but startups might prioritize lightweight frameworks and developer education for faster fixes. This multivocal literature review explores these contrasting approaches and identifies the most successful strategies for the startup landscape.
-\item \textbf{RQ5.} What are the possible future directions of technical debt research and practice in startups? Startups are constantly evolving. As successful startups scale, their technical debt challenges might converge with those faced by large companies. This multivocal literature review identifies emerging trends and explores how future research and practice can address technical debt in the evolving startup landscape.
+\item \textbf{RQ3.} How do startups manage technical debt and when does that become a priority? Knowing when to address technical debt is crucial for startups. Like any other organization, startups must balance the need for new features with fixing existing code. However, when should addressing technical debt early to avoid future bottlenecks be a priority over short-term gains and user acquisition. A multivocal literature review could examine this issue and identify decision-making frameworks specific to the startup environment.
+\item \textbf{RQ4.} What are the reported mitigating strategies of technical debt in startups? Effective strategies for managing technical debt in startups can save time and resources in the long run. Code reviews and automated testing are valuable in both startups and large companies, but startups might prioritize lightweight frameworks and developer education for faster fixes. A multivocal literature review could explore these contrasting approaches and identify the most successful strategies for the startup landscape.
+\item \textbf{RQ5.} What are the possible future directions of technical debt research and practice in startups? Startups are constantly evolving. As successful startups scale, their technical debt challenges might converge with those faced by large companies. A multivocal literature review could identify emerging trends and explore how future research and practice can address technical debt in the evolving startup landscape.
 
 \end{enumerate}
 
@@ -79,9 +73,6 @@ This work was conducted with the goal of answering the following research questi
 \end{figure}
 
 \subsection*{Conducting the Multivocal Literature Review}
-\mercy{Fixed \serge{I am not a big fan of subsections.
-But if you have a subsection on ``Conducting", you should also have one on ``Planning" and on ``Reporting''.
-And if you have one on ``Planning'' you should list the research questions there and not in the intro.}}
 The search was conducted in three stages.
 \begin{enumerate}
 \item \emph{Data sources and search strategy}: For the formal literature, we selected the list of relevant bibliographic sources following the suggestions of~\cite{kitchenham2007guidelines}, since these sources are
@@ -89,7 +80,7 @@ recognized as the most representative in the software engineering domain.
 The list is: (1) ACM Digital Library;  (2) IEEEXplore Digital Library; (3) Science Direct; (4) Scopus; (5) CiteSeer library; (6) Inspec; (7) Springer link.
 
 Thereafter, we applied the snowballing method in order not to miss any potentially relevant publications as outlined in~\cite{Wohlin2014/2601248.2601268}.
-On the other hand, we used Google's web search engine (http://www.google.com) to source for the grey literature.
+On the other hand, we used Google's web search engine (http://www.google.com) to search for the relevant grey literature.
 A preliminary search helped to narrow down the keywords for a suitable search query.
 We used the terms "technical debt" AND "startup" for both the formal and the grey literature searches.
 
@@ -267,8 +258,6 @@ child [concept color=lightgray] { node {Mitigation}
 \subsection*{Technical Debt Accumulation Causes}
 \label{sec:accumulation}
 
-\mercy{ done\serge{This accumulation is interesting. But doesn't appear in the taxonomy?}}
-
 Technical debt accumulation in startups can be attributed to various factors.
 Besker et al. found that the intentional accumulation of technical debt in startups is influenced by organizational factors such as the startup phase, developers' experience, founders' software knowledge, and employee growth~\cite{Besker2018}.
 Additionally, Klotins et al. highlighted that prioritizing development speed over quality, team aspects, and lack of resources contribute to the accumulation of technical debt in startups~\cite{Klotins:2018:ETD}.
@@ -321,11 +310,10 @@ A culture that prioritizes rapid development over long-term maintainability can 
 \section{Framework for Managing Technical Debt in Startups}
 \label{Sec:Framework}
 
-\mercy{ WIP - this is derived from the mitigation part of the taxonomy \serge{This looks \textbf{very} interesting.
+\mercy{ WIP - this is derived from the mitigation part of the taxonomy}\serge{This looks \textbf{very} interesting.
 But \ldots (a) I don't see how you derived this from the literature survey. Explain this in the research design.
 (b) How this relates to the taxonomy in Figure \ref{fig:taxonomy}
-
-}}
+}
 
 The technical debt management process includes activities used to control and reduce the technical debt in a software project.
 
